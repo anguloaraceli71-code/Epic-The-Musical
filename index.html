@@ -410,7 +410,7 @@ img.foto-jorge:hover {
 }
 
 img.foto-jorge {
-    width:200 !important;
+    width:200px !important;
     height: 230px !important;
     max-width:200px !important;
     object-fit: cover;
@@ -474,6 +474,30 @@ img.foto-jorge {
 }
 
 
+.personaje {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: start;
+    gap: 25px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.personaje img {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.descripcion-personaje {
+    text-align: left;
+    color: aliceblue;
+    padding-top: 5px;
+}
+
+
+
 @media (max-width: 768px) {
     .contenido {
         grid-template-columns: 1fr;
@@ -490,6 +514,201 @@ img.foto-jorge {
         font-size: 24px;
     }
 }
+.ficha-personaje {
+    display: grid;
+    grid-template-columns: 32% 1fr;
+    gap: 25px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #111114;
+    border: 1px solid #292323;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.ficha-imagen img {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    max-height: 500px;
+    object-fit: cover;
+    border: 1px solid #72552d;
+}
+
+.ficha-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.ficha-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #d6b66b;
+    border-bottom: 1px solid #72552d;
+    padding-bottom: 12px;
+}
+
+.ficha-titulo h3 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.ficha-titulo span {
+    color: #d6b66b;
+}
+
+.subtitulo-ficha {
+    color: #b9a47c;
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    margin: 12px 0 25px;
+}
+
+.ficha-datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 20px;
+    margin-bottom: 25px;
+}
+
+.ficha-datos div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ficha-datos strong {
+    background: #a87532;
+    color: #111;
+    font-size: 10px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    min-width: 75px;
+    text-align: center;
+}
+
+.ficha-datos span {
+    color: #e5e1d8;
+    font-size: 13px;
+}
+
+.ficha-descripcion {
+    border-top: 1px solid #72552d;
+    padding-top: 15px;
+}
+
+.ficha-descripcion p {
+    color: #d0cbd0;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.ficha-enlaces {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.ficha-enlaces a {
+    color: #c99b59;
+    text-decoration: underline;
+}
+
+.ficha-enlaces span {
+    color: #d6b66b;
+}
+
+@media (max-width: 768px) {
+    .ficha-personaje {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .ficha-imagen img {
+        height: 350px;
+        min-height: auto;
+    }
+
+    .ficha-datos {
+        grid-template-columns: 1fr;
+    }
+
+    .ficha-titulo h3 {
+        font-size: 22px;
+    }
+}
+.ficha-enlaces button {
+    background: none;
+    border: none;
+    color: #c99b59;
+    text-decoration: underline;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.ficha-enlaces button:hover {
+    color: #f5d58b;
+}
+.detalle-panel {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #19171a;
+    border-left: 3px solid #a87532;
+    border-radius: 4px;
+}
+.detalle-panel.activo {
+    display: block;
+}
+
+.detalle-panel h4 {
+    color: #d6b66b;
+    margin-bottom: 10px;
+}
+
+.detalle-panel p {
+    color: #d0cbd0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.saga {
+    transition: all 0.35s ease;
+}
+
+.saga.activa {
+    border: 2px solid var(--color-saga);
+    background: linear-gradient(
+        145deg,
+        var(--color-fondo-saga),
+        #08090d
+    );
+    box-shadow: 0 0 20px var(--color-saga);
+    transform: translateY(-5px);
+}
+
+.saga.activa img {
+    border: 2px solid var(--color-saga);
+    box-shadow: 0 0 15px var(--color-saga);
+}
+
+.saga.activa h2 {
+    color: var(--color-saga);
+    transition: color 0.35s ease;
+}
 
 </style>
 <body bgcolor="black">
@@ -499,7 +718,7 @@ img.foto-jorge {
  <h3 style="text-align: right; color: rgb(227, 228, 222);">By: Jorge Rivera-Herrans</h3>
  </div>
  <div style="display: flex;align-items: flex-start;gap: 15px;">
-<img src="https://m.media-amazon.com/images/M/MV5BNDhkZGY0ODEtMjk1Zi00ZjYyLWJhMTctNDY4YWRmMjRkNTFjXkEyXkFqcGc@._V1_.jpg" alt="Logo de EPIC" width="400" height="400">
+<img src="https://m.media-amazon.com/images/M/MV5BNDhkZGY0ODEtMjk1Zi00ZjYyLWJhMTctNDY4YWRmMjRkNTFjXkEyXkFqcGc@._V1_.jpg" alt="Logo de EPIC" width="400" height="400" style="margin-right: 200px;">
 <h2 style="margin-top: 0; text-align: left;color: aliceblue;">¿Qué es EPIC:the musical?</h2>
 </div>
 <div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
@@ -509,7 +728,7 @@ img.foto-jorge {
  <img src="https://www.infobae.com/resizer/v2/UL6DCBEPOVFTTPSUPEEKCRT4HQ.jpg?auth=e0fb5903039bcdb28841fc3f9df6f1d527374d63b7da8f00ae9ea1f549deb929&smart=true&width=1200&height=1200&quality=85" alt="Imagen de Homero" width="400" height="400" style="margin-left: 1500px;">
 <div style="background-color: #101113; min-height: 120px; padding: 10px; color: white;"></div>
 <img src="https://i.pinimg.com/736x/53/a5/78/53a5786a5dcba0cb8613b7d1555853c5.jpg" alt="Comparación:EPIC" width="435" height="550" style="margin-left: 340px;">
-<img src="https://www.planetadelibros.us/usuaris/libros/thumbs/d3433170-4f87-49cd-beec-68f1b3927145/d_1200_1200/385051_portada_odisea-comic_homero_202310231106.webp" alt="Comparación:Odisea" width="435" height="550" style="margin-left: 525px;">
+<img src="https://www.planetadelibros.us/usuaris/libros/thumbs/d3433170-4f87-49cd-beec-68f1b3927145/d_1200_1200/385051_portada_odisea-comic_homero_202310231106.webp" alt="Comparación:Odisea" width="435" height="550" style="margin-left: 1245px;">
 <div class="titulo-comparacion">
     <h2>LAS DIFERENCIAS ENTRE EPIC: THE MUSICAL Y LA ODISEA</h2>
      <h3>Origen de ambas obras</h3>
@@ -552,7 +771,7 @@ img.foto-jorge {
 <section class="sagas">
 
     <!-- THE TROY SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#9e3030; --color-fondo-saga:#301515;">
         <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/7/c/b/c/1850481745855849.jpg"
              alt="The Troy Saga" onclick="mostrarCanciones('troy')">
         <h2>1. The Troy Saga</h2>
@@ -566,7 +785,7 @@ img.foto-jorge {
     </div>
 
     <!-- THE CYCLOPS SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#a66b3f; --color-fondo-saga:#302015;">
         <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/6/f/f/a/2045561745855840.jpg"
              alt="The Cyclops Saga" onclick="mostrarCanciones('cyclops')">
         <h2>2. The Cyclops Saga</h2>
@@ -579,7 +798,7 @@ img.foto-jorge {
     </div>
 
     <!-- THE OCEAN SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#2679a8; --color-fondo-saga:#102638;">
         <img src="https://akamai.sscdn.co/letras/360x360/albuns/2/4/5/e/3033221745414872.jpg"
              alt="The Ocean Saga" onclick="mostrarCanciones('ocean')">
         <h2>3. The Ocean Saga</h2>
@@ -592,7 +811,7 @@ img.foto-jorge {
     </div>
 
     <!-- THE CIRCE SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#9654b8; --color-fondo-saga:#281633;">
         <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/3/7/7/a/3033291745414886.jpg"
              alt="The Circe Saga" onclick="mostrarCanciones('circe')">
         <h2>4. The Circe Saga</h2>
@@ -605,7 +824,7 @@ img.foto-jorge {
     </div>
 
     <!-- THE UNDERWORLD SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#593b80; --color-fondo-saga:#191126;">
         <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/c/b/4/b/3033361745414912.jpg"
              alt="The Underworld Saga" onclick="mostrarCanciones('underworld')">
         <h2>5. The Underworld Saga</h2>
@@ -618,7 +837,6 @@ img.foto-jorge {
 
 </section>
 
-
 <div class="encabezado-acto">
     <center><h1>ACTO 2</h1></center>
 </div>
@@ -630,7 +848,7 @@ img.foto-jorge {
 <section class="sagas">
 
     <!-- THE THUNDER SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#d6b43b; --color-fondo-saga:#302a12;">
         <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/5/8/a/f/2284581720180009.jpg"
              alt="The Thunder Saga" onclick="mostrarCanciones('thunder')">
         <h2>6. The Thunder Saga</h2>
@@ -644,7 +862,7 @@ img.foto-jorge {
     </div>
 
     <!-- THE WISDOM SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#c49b45; --color-fondo-saga:#302817;">
         <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/0/2/e/7/2356681725278130.jpg"
              alt="The Wisdom Saga" onclick="mostrarCanciones('wisdom')">
         <h2>7. The Wisdom Saga</h2>
@@ -658,7 +876,7 @@ img.foto-jorge {
     </div>
 
     <!-- THE VENGEANCE SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#a52845; --color-fondo-saga:#30121d;">
         <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/f/9/5/b/2425661730467440.jpg"
              alt="The Vengeance Saga" onclick="mostrarCanciones('vengeance')">
         <h2>8. The Vengeance Saga</h2>
@@ -672,7 +890,7 @@ img.foto-jorge {
     </div>
 
     <!-- THE ITHACA SAGA -->
-    <div class="saga">
+    <div class="saga" style="--color-saga:#66834b; --color-fondo-saga:#1c2918;">
         <img src="https://akamai.sscdn.co/letras/360x360/albuns/2/3/e/c/2485801735210214.jpg"
              alt="The Ithaca Saga" onclick="mostrarCanciones('ithaca')">
         <h2>9. The Ithaca Saga</h2>
@@ -690,7 +908,929 @@ img.foto-jorge {
     <h2>EPIC: The Musical Player</h2>
     <div id="youtubePlayer"></div>
 </section>
+<div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
+ <center><h1 style="color: aliceblue;">Mapa del recorrido de Odiseo</h1></center> 
+</div>
+<img src="https://i.pinimg.com/736x/f9/c9/6e/f9c96e36b03833c365766948baf861b3.jpg" alt="Mapa del viaje de Odiseo" width="700" height="600">
+<p></p>
+<p></p>
+<p></p>
+<div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
+ <center><h1 style="color: aliceblue;">Personajes Destacados</h1></center> 
+</div>
+<article class="ficha-personaje">
 
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/736x/88/03/c2/8803c250f1fed3181d745d41a6a94e10.jpg" alt="Odiseo">
+    </div>
+
+    <div class="ficha-contenido">
+
+        <div class="ficha-titulo">
+            <span>◆</span>
+            <h3>ODISEO</h3>
+            <span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">El rey de Ítaca y héroe de la Odisea</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Odiseo</span></div>
+            <div><strong>TÍTULO</strong><span>Rey de Ítaca</span></div>
+            <div><strong>ORIGEN</strong><span>Ítaca</span></div>
+            <div><strong>ESPOSA</strong><span>Penélope</span></div>
+            <div><strong>HIJO</strong><span>Telémaco</span></div>
+            <div><strong>ESPECIE</strong><span>Humano</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Odiseo es el protagonista de EPIC: The Musical.
+                Después de participar en la guerra de Troya,
+                emprende un largo viaje para regresar a Ítaca.
+                Durante su travesía enfrenta criaturas, dioses
+                y decisiones difíciles que ponen a prueba su
+                inteligencia, liderazgo y humanidad.
+            </p>
+<div class="ficha-enlaces">
+    <button onclick="mostrarDetalle('apariencia-odiseo')">
+        Apariencia
+    </button>
+
+    <span>◆</span>
+
+    <button onclick="mostrarDetalle('personalidad-odiseo')">
+        Personalidad
+    </button>
+
+    <span>◆</span>
+
+    <button onclick="mostrarDetalle('origen-odiseo')">
+        Origen
+    </button>
+</div>
+
+    <div id="apariencia-odiseo" class="detalle-panel">
+        <h4>✦ Apariencia</h4>
+        <p>
+            Odiseo suele representarse como un hombre adulto,
+            de cabello oscuro, mirada determinada y vestimenta
+            de guerrero griego.
+        </p>
+    </div>
+
+    <div id="personalidad-odiseo" class="detalle-panel">
+        <h4>✦ Personalidad</h4>
+        <p>
+            Es inteligente, astuto, estratégico y perseverante.
+            También puede ser orgulloso e impulsivo.
+        </p>
+    </div>
+
+    <div id="origen-odiseo" class="detalle-panel">
+        <h4>✦ Origen</h4>
+        <p>
+            Es el rey de Ítaca, hijo de Laertes y Anticlea,
+            esposo de Penélope y padre de Telémaco.
+        </p>
+    </div>
+
+</div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/1200x/83/65/9f/83659fb16d8b71a110bb0a95111d7c83.jpg" alt="Penélope">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>PENÉLOPE</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">La reina que espera el regreso de su esposo</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Penélope</span></div>
+            <div><strong>TÍTULO</strong><span>Reina de Ítaca</span></div>
+            <div><strong>ORIGEN</strong><span>Esparta</span></div>
+            <div><strong>ESPOSO</strong><span>Odiseo</span></div>
+            <div><strong>HIJO</strong><span>Telémaco</span></div>
+            <div><strong>ESPECIE</strong><span>Humana</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Penélope es la esposa de Odiseo y reina de Ítaca.
+                Su historia está marcada por la larga ausencia de
+                su esposo, quien partió hacia la guerra de Troya
+                y todavía no ha regresado. Durante todos esos años,
+                debe mantener el orden del reino y enfrentarse a
+                los pretendientes que desean casarse con ella.
+            </p>
+            <p>
+                Aunque no participa directamente en las aventuras
+                de Odiseo, es una de las principales motivaciones
+                de su viaje. Representa el hogar, el amor y la
+                esperanza que el protagonista desea recuperar.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-penelope')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-penelope')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-penelope')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-penelope" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    Suele representarse como una mujer de cabello
+                    largo y oscuro, con vestimenta elegante de la
+                    antigua Grecia. Como reina, puede llevar
+                    vestidos largos, joyas y adornos que reflejan
+                    su posición dentro del reino de Ítaca.
+                </p>
+            </div>
+
+            <div id="personalidad-penelope" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es paciente, inteligente, fiel y perseverante.
+                    Posee una gran fortaleza emocional y sabe
+                    mantener la calma ante situaciones difíciles.
+                    También demuestra astucia al enfrentarse
+                    a quienes intentan aprovecharse de su ausencia.
+                </p>
+            </div>
+
+            <div id="origen-penelope" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Según la tradición mitológica, es hija de
+                    Icario y Peribea. Se convirtió en reina de
+                    Ítaca al casarse con Odiseo y es madre de
+                    Telémaco. Su historia está relacionada con
+                    la isla de Ítaca y la espera del regreso
+                    de su esposo.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/736x/57/0e/e9/570ee9c64e3692e64ccef7a7dbc3357a.jpg" alt="Telémaco">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>TELÉMACO</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">El hijo que busca conocer a su padre</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Telémaco</span></div>
+            <div><strong>TÍTULO</strong><span>Príncipe de Ítaca</span></div>
+            <div><strong>ORIGEN</strong><span>Ítaca</span></div>
+            <div><strong>PADRE</strong><span>Odiseo</span></div>
+            <div><strong>MADRE</strong><span>Penélope</span></div>
+            <div><strong>ESPECIE</strong><span>Humano</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Telémaco es el hijo de Odiseo y Penélope.
+                Debido a que su padre partió hacia la guerra
+                de Troya cuando él era muy pequeño, creció
+                sin conocerlo realmente. Su vida en Ítaca
+                está marcada por la presencia de los
+                pretendientes que desean ocupar el trono.
+            </p>
+            <p>
+                En EPIC: The Musical, su historia representa
+                el crecimiento y la búsqueda de identidad.
+                Desea encontrar su propia valentía y demostrar
+                que puede proteger a su madre y a su hogar.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-telemaco')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-telemaco')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-telemaco')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-telemaco" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    Generalmente se representa como un joven de
+                    cabello oscuro, apariencia juvenil y vestimenta
+                    propia de un príncipe griego. Puede llevar
+                    prendas elegantes y elementos relacionados
+                    con la realeza de Ítaca.
+                </p>
+            </div>
+
+            <div id="personalidad-telemaco" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es amable, curioso, sensible y valiente,
+                    aunque al principio carece de experiencia
+                    y seguridad. Desea encontrar su lugar en
+                    el mundo y demostrar que puede convertirse
+                    en alguien capaz de proteger a su familia.
+                </p>
+            </div>
+
+            <div id="origen-telemaco" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Es hijo de Odiseo y Penélope. Nació en
+                    Ítaca y pertenece a la familia real de
+                    la isla. Según la tradición mitológica,
+                    su historia está relacionada con la
+                    búsqueda de noticias sobre su padre.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/736x/9b/90/28/9b9028b4add1f715241a516b5435913e.jpg" alt="Atenea">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>ATENEA</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">La diosa de la sabiduría y la estrategia</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Atenea</span></div>
+            <div><strong>TÍTULO</strong><span>Diosa de la sabiduría</span></div>
+            <div><strong>ORIGEN</strong><span>Monte Olimpo</span></div>
+            <div><strong>PADRE</strong><span>Zeus</span></div>
+            <div><strong>DOMINIO</strong><span>Sabiduría y estrategia</span></div>
+            <div><strong>ESPECIE</strong><span>Deidad olímpica</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Atenea es una de las principales divinidades
+                del Olimpo y desempeña un papel importante en
+                EPIC: The Musical. Es la diosa de la sabiduría,
+                la estrategia y la guerra inteligente. Reconoce
+                las capacidades de Odiseo y se interesa por
+                su manera de resolver los problemas.
+            </p>
+            <p>
+                Su relación con el protagonista atraviesa
+                momentos de cercanía, desacuerdo y reconciliación.
+                También se convierte en una figura importante
+                para Telémaco, ayudándolo a descubrir su
+                propia valentía.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-atenea')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-atenea')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-atenea')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-atenea" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    En las representaciones mitológicas suele
+                    aparecer con armadura, casco, lanza y escudo.
+                    Su vestimenta está relacionada con la guerra
+                    estratégica y la autoridad divina. También
+                    puede llevar símbolos como la lechuza.
+                </p>
+            </div>
+
+            <div id="personalidad-atenea" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es inteligente, estratégica, orgullosa
+                    y exigente. Valora la capacidad de pensar
+                    antes de actuar y espera que los demás
+                    demuestren determinación. Puede mostrarse
+                    distante cuando sus ideales son cuestionados.
+                </p>
+            </div>
+
+            <div id="origen-atenea" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Es hija de Zeus y, según el mito más conocido,
+                    nació de la cabeza de su padre completamente
+                    armada. Es una diosa olímpica y una de las
+                    principales protectoras de héroes y ciudades
+                    en la mitología griega.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/736x/06/43/c5/0643c5fcd4958d7ba791bba0cd99bf8e.jpg" alt="Poseidón">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>POSEIDÓN</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">El poderoso señor de los mares</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Poseidón</span></div>
+            <div><strong>TÍTULO</strong><span>Dios del mar</span></div>
+            <div><strong>ORIGEN</strong><span>Monte Olimpo</span></div>
+            <div><strong>PADRES</strong><span>Cronos y Rea</span></div>
+            <div><strong>DOMINIO</strong><span>Mares y océanos</span></div>
+            <div><strong>ESPECIE</strong><span>Deidad olímpica</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Poseidón es uno de los dioses más poderosos
+                de la mitología griega. Gobierna los mares
+                y tiene la capacidad de controlar las aguas,
+                provocar tormentas y alterar el océano.
+                En EPIC: The Musical es uno de los principales
+                antagonistas de Odiseo.
+            </p>
+            <p>
+                Su enemistad con el protagonista comienza
+                después del encuentro de Odiseo con Polifemo,
+                hijo de Poseidón. El dios considera que las
+                acciones del héroe deben tener consecuencias
+                y convierte su viaje de regreso en una
+                travesía todavía más peligrosa.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-poseidon')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-poseidon')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-poseidon')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-poseidon" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    Se representa como un hombre adulto de
+                    aspecto imponente, con cabello y barba
+                    abundantes. Su símbolo más conocido es
+                    el tridente, un arma que representa
+                    su autoridad sobre el océano.
+                </p>
+            </div>
+
+            <div id="personalidad-poseidon" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es poderoso, autoritario, orgulloso y
+                    vengativo cuando considera que alguien
+                    ha desafiado su autoridad. En la historia
+                    musical defiende una visión implacable
+                    sobre la fuerza y la misericordia.
+                </p>
+            </div>
+
+            <div id="origen-poseidon" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Es hijo de Cronos y Rea, hermano de Zeus
+                    y Hades. Después de la derrota de los
+                    titanes, recibió el dominio sobre los
+                    mares y se convirtió en uno de los
+                    principales dioses olímpicos.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/736x/30/a3/47/30a347c5aa89b3c6963eec73c1a940e3.jpg" alt="Circe">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>CIRCE</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">La poderosa hechicera de Eea</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Circe</span></div>
+            <div><strong>TÍTULO</strong><span>Hechicera</span></div>
+            <div><strong>ORIGEN</strong><span>Isla de Eea</span></div>
+            <div><strong>PADRE</strong><span>Helios</span></div>
+            <div><strong>HABILIDAD</strong><span>Hechicería</span></div>
+            <div><strong>ESPECIE</strong><span>Figura divina</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Circe es una poderosa hechicera que habita
+                en la isla de Eea. Es conocida por sus
+                conocimientos mágicos y por su capacidad
+                de transformar a los seres humanos en animales.
+                En EPIC: The Musical se encuentra con Odiseo
+                y sus compañeros durante su viaje.
+            </p>
+            <p>
+                Su encuentro con el protagonista representa
+                un enfrentamiento de inteligencia y voluntad.
+                Circe desconfía de los hombres que llegan
+                a su territorio y utiliza sus poderes para
+                protegerse. Su historia también explora
+                temas como la confianza, el miedo y la
+                supervivencia.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-circe')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-circe')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-circe')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-circe" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    Suele representarse como una mujer de
+                    aspecto elegante y misterioso, con vestidos
+                    largos, adornos y elementos relacionados
+                    con la magia. Su apariencia suele transmitir
+                    poder y autoridad.
+                </p>
+            </div>
+
+            <div id="personalidad-circe" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es inteligente, cautelosa, independiente
+                    y desconfiada. Posee una gran seguridad
+                    en sus habilidades y no permite fácilmente
+                    que otros controlen su territorio o sus
+                    decisiones.
+                </p>
+            </div>
+
+            <div id="origen-circe" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Según la tradición mitológica más conocida,
+                    es hija de Helios, dios del Sol, y de
+                    Perseis, una oceánide. Habita en la isla
+                    de Eea, donde desarrolla sus conocimientos
+                    de hechicería.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/736x/67/f7/2c/67f72c900fddbbfaf875b1220ce42c6e.jpg" alt="Euríloco">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>EURÍLOCO</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">El compañero que cuestiona las decisiones</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Euríloco</span></div>
+            <div><strong>TÍTULO</strong><span>Segundo al mando</span></div>
+            <div><strong>ORIGEN</strong><span>Grecia</span></div>
+            <div><strong>RELACIÓN</strong><span>Cuñado de Odiseo</span></div>
+            <div><strong>OCUPACIÓN</strong><span>Guerrero</span></div>
+            <div><strong>ESPECIE</strong><span>Humano</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Euríloco es uno de los compañeros más importantes
+                de Odiseo y ocupa el puesto de segundo al mando
+                de la tripulación. Durante el viaje demuestra
+                preocupación por la seguridad de los hombres
+                y cuestiona las decisiones que considera
+                demasiado arriesgadas.
+            </p>
+            <p>
+                Sus diferencias con Odiseo aumentan a medida
+                que la tripulación enfrenta pérdidas y peligros.
+                Su personaje permite explorar los conflictos
+                del liderazgo y las dificultades de mantener
+                la confianza entre compañeros durante una
+                situación extrema.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-euriloco')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-euriloco')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-euriloco')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-euriloco" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    En las representaciones artísticas suele
+                    aparecer como un guerrero griego adulto,
+                    con vestimenta de viaje, armadura y una
+                    expresión seria. Su apariencia refleja
+                    su experiencia como integrante de la
+                    tripulación.
+                </p>
+            </div>
+
+            <div id="personalidad-euriloco" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es prudente, desconfiado, preocupado y
+                    cuestionador. Suele pensar en las
+                    consecuencias antes de actuar y considera
+                    que la supervivencia de los compañeros
+                    debe ser una prioridad.
+                </p>
+            </div>
+
+            <div id="origen-euriloco" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Es uno de los hombres que acompañan a
+                    Odiseo después de la guerra de Troya.
+                    En la tradición de la Odisea es pariente
+                    de Odiseo por matrimonio, pues está
+                    casado con su hermana Ctimene.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/736x/04/ac/2c/04ac2cf872eb304925b4faea818e3c2b.jpg" alt="Polites">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>POLITES</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">El guerrero que cree en los brazos abiertos</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Polites</span></div>
+            <div><strong>TÍTULO</strong><span>Compañero de Odiseo</span></div>
+            <div><strong>ORIGEN</strong><span>Grecia</span></div>
+            <div><strong>RELACIÓN</strong><span>Amigo de Odiseo</span></div>
+            <div><strong>OCUPACIÓN</strong><span>Guerrero</span></div>
+            <div><strong>ESPECIE</strong><span>Humano</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Polites es uno de los compañeros más cercanos
+                de Odiseo. Se caracteriza por su actitud
+                positiva y su manera amable de relacionarse
+                con los demás. A diferencia de otros guerreros,
+                considera que no todas las situaciones deben
+                resolverse mediante la violencia o la desconfianza.
+            </p>
+            <p>
+                Su filosofía de recibir a los demás con los
+                brazos abiertos representa una perspectiva
+                esperanzadora dentro de una historia llena
+                de peligros. Aunque su participación es breve,
+                sus ideas tienen una influencia importante
+                en las decisiones y recuerdos de Odiseo.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-polites')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-polites')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-polites')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-polites" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    Suele representarse como un joven guerrero
+                    griego, con vestimenta sencilla y una
+                    expresión amable. Su aspecto artístico
+                    suele transmitir cercanía, tranquilidad
+                    y optimismo.
+                </p>
+            </div>
+
+            <div id="personalidad-polites" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es alegre, optimista, amable y pacífico.
+                    Cree en la bondad y en la posibilidad
+                    de confiar en los demás. Su manera de
+                    pensar contrasta con la cautela y la
+                    preocupación de Odiseo.
+                </p>
+            </div>
+
+            <div id="origen-polites" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Es uno de los compañeros de Odiseo durante
+                    el viaje posterior a la guerra de Troya.
+                    En EPIC: The Musical es un personaje
+                    importante por su amistad con el protagonista
+                    y su filosofía de vida.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/736x/56/ec/6e/56ec6e6869f900c5b475e17098f43a5a.jpg" alt="Hermes">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>HERMES</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">El veloz mensajero del Olimpo</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Hermes</span></div>
+            <div><strong>TÍTULO</strong><span>Mensajero divino</span></div>
+            <div><strong>ORIGEN</strong><span>Monte Cilene</span></div>
+            <div><strong>PADRES</strong><span>Zeus y Maya</span></div>
+            <div><strong>DOMINIO</strong><span>Viajes y comunicación</span></div>
+            <div><strong>ESPECIE</strong><span>Deidad olímpica</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Hermes es el mensajero de los dioses del Olimpo
+                y una divinidad relacionada con los viajes,
+                el comercio, la comunicación y la astucia.
+                Es conocido por su velocidad y por su capacidad
+                de desplazarse entre el mundo de los dioses
+                y el de los mortales.
+            </p>
+            <p>
+                En EPIC: The Musical aparece durante el viaje
+                de Odiseo y le proporciona una ayuda importante
+                para enfrentarse a Circe. Su intervención
+                demuestra que detrás de su actitud divertida
+                también existe una gran inteligencia y
+                conocimiento del mundo divino.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-hermes')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-hermes')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-hermes')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-hermes" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    Suele representarse como un joven de aspecto
+                    ágil, con sandalias aladas y un sombrero
+                    característico. También puede llevar el
+                    caduceo, su bastón con dos serpientes
+                    entrelazadas, símbolo asociado a su figura.
+                </p>
+            </div>
+
+            <div id="personalidad-hermes" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es ingenioso, astuto, divertido y despreocupado.
+                    Posee facilidad para comunicarse y adaptarse
+                    a diferentes situaciones. Le gusta utilizar
+                    su inteligencia para encontrar soluciones
+                    inesperadas.
+                </p>
+            </div>
+
+            <div id="origen-hermes" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Es hijo de Zeus y Maya. Según la mitología,
+                    nació en una cueva del monte Cilene. Es
+                    uno de los dioses olímpicos y cumple la
+                    función de mensajero de las divinidades.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="ficha-personaje">
+
+    <div class="ficha-imagen">
+        <img src="https://i.pinimg.com/1200x/73/e6/10/73e610ad104ef9f697dd61b7888dd6fc.jpg" alt="Zeus">
+    </div>
+
+    <div class="ficha-contenido">
+        <div class="ficha-titulo">
+            <span>◆</span><h3>ZEUS</h3><span>◆</span>
+        </div>
+
+        <p class="subtitulo-ficha">El soberano de los dioses del Olimpo</p>
+
+        <div class="ficha-datos">
+            <div><strong>NOMBRE</strong><span>Zeus</span></div>
+            <div><strong>TÍTULO</strong><span>Rey del Olimpo</span></div>
+            <div><strong>ORIGEN</strong><span>Monte Olimpo</span></div>
+            <div><strong>PADRES</strong><span>Cronos y Rea</span></div>
+            <div><strong>DOMINIO</strong><span>Cielo y trueno</span></div>
+            <div><strong>ESPECIE</strong><span>Deidad olímpica</span></div>
+        </div>
+
+        <div class="ficha-descripcion">
+            <p>
+                Zeus es el rey de los dioses del Olimpo y
+                una de las figuras más poderosas de la
+                mitología griega. Gobierna el cielo, controla
+                los rayos y posee autoridad sobre las demás
+                divinidades. Sus decisiones pueden influir
+                directamente en el destino de los mortales.
+            </p>
+            <p>
+                En EPIC: The Musical aparece como una figura
+                autoritaria que exige respeto por las leyes
+                divinas. Su intervención está relacionada
+                con las consecuencias de las acciones de
+                Odiseo y sus compañeros, especialmente cuando
+                desafían las normas establecidas por los dioses.
+            </p>
+        </div>
+
+        <div class="ficha-enlaces">
+            <button onclick="mostrarDetalle('apariencia-zeus')">Apariencia</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('personalidad-zeus')">Personalidad</button>
+            <span>◆</span>
+            <button onclick="mostrarDetalle('origen-zeus')">Origen</button>
+        </div>
+
+        <div class="detalles-personaje">
+            <div id="apariencia-zeus" class="detalle-panel">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    Se representa como un hombre adulto de
+                    aspecto imponente, con barba y cabello
+                    abundante. Su símbolo más conocido es
+                    el rayo, que representa su poder sobre
+                    el cielo y las tormentas.
+                </p>
+            </div>
+
+            <div id="personalidad-zeus" class="detalle-panel">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es autoritario, poderoso, orgulloso y
+                    firme al imponer las normas divinas.
+                    Valora la obediencia y no suele tolerar
+                    que otros desafíen su autoridad.
+                </p>
+            </div>
+
+            <div id="origen-zeus" class="detalle-panel">
+                <h4>✦ Origen</h4>
+                <p>
+                    Es hijo de Cronos y Rea. Después de
+                    derrotar a los titanes junto a sus
+                    hermanos, obtuvo el dominio del cielo
+                    y se convirtió en rey de los dioses
+                    del Olimpo. Es hermano de Poseidón y Hades.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
+ <center><h1 style="color: aliceblue;">Los obstáculos de Odiseo</h1></center> 
+</div>
+<div class="personaje">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAG59YDZTa6pH0hOZ4AKVmCefK-G-bSSJ0SqiZkQAvxN9Jr05Fw_bwG_b&s=10" alt="Polifemo">
+    <div class="descripcion-personaje">
+        <h3>1. Polifemo</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://i.pinimg.com/736x/83/3e/b0/833eb0dc2f5f4f26b53c5c31fb4b505e.jpg" alt="Eolo">
+    <div class="descripcion-personaje">
+        <h3>2. Eolo</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThs2M7jqD36EM6ps9Q0kmCH1NnG3_HKBr-bEYvP9mmj8zGkYW0rsOl1yi&s=10" alt="Poseidon">
+    <div class="descripcion-personaje">
+        <h3>3. Poseidon</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://preview.redd.it/do-you-think-circe-and-athena-are-working-to-make-a-kinder-v0-olkf95vks2ae1.jpeg?auto=webp&s=1999d0849628f6fdfcb66aab0ed66c4920b1cb41" alt="Circe2">
+    <div class="descripcion-personaje">
+        <h3>4. La isla de Circe</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://cdna.artstation.com/p/assets/images/images/085/913/892/large/lian-villegas-the-prophet-epic-the-concept-musical-4.jpg?1741930352" alt="Inframundo ">
+    <div class="descripcion-personaje">
+        <h3>5. El inframundo</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://i.redd.it/sr6p3wjdmnmg1.jpeg" alt="Sirenas">
+    <div class="descripcion-personaje">
+        <h3>6. Las sirenas</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5eAnuOYXOjtXOdBAj8hAamkvPDIgum9k0q-TX7HBnwDv-nt0sg1XC1uu&s=10" alt="Scylla">
+    <div class="descripcion-personaje">
+        <h3>7. Escila/Scylla</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://i.pinimg.com/736x/76/20/91/7620919436e4734ddf87cc7c5827eeb8.jpg" alt="Helios Dios del Sol">
+    <div class="descripcion-personaje">
+        <h3>8. La isla del Sol y Zeus</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://cdna.artstation.com/p/assets/images/images/086/967/980/large/sitigs_art-calypso-signed.jpg?1764668062" alt="Calipso">
+    <div class="descripcion-personaje">
+        <h3>9. Calipso</h3>
+        <p></p>
+    </div>
+</div>
+<div class="personaje">
+    <img src="https://preview.redd.it/ima-do-this-then-im-charybdis-literally-ama-v0-5nnugpfz44ee1.jpg?width=188&format=pjpg&auto=webp&s=af69965141cc97ed60deaa8097d26ad180c52685" alt="Caribdis">
+    <div class="descripcion-personaje">
+        <h3>10. Caribdis</h3>
+        <p></p>
+    </div>
+</div>
 <section class="contenido">
     <div class="imagen">   
         <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/7/e/a/b/7eab493038e2f2329fadcc9320421d5d.jpg" alt="Jorge Rivera-Herrans" class="foto-jorge">
@@ -769,9 +1909,64 @@ function reproducirCancion(indice) {
         behavior: "smooth"
     });
 }
+
+function mostrarCanciones(id) {
+
+    const listas = document.querySelectorAll(".canciones");
+    const sagas = document.querySelectorAll(".saga");
+
+    let seleccionada = null;
+
+    sagas.forEach(function(saga) {
+        const lista = saga.querySelector(".canciones");
+
+        if (lista && lista.id === id) {
+            seleccionada = saga;
+        }
+    });
+
+    if (!seleccionada) return;
+
+    const estabaAbierta = seleccionada.classList.contains("activa");
+
+    sagas.forEach(function(saga) {
+        saga.classList.remove("activa");
+    });
+
+    listas.forEach(function(lista) {
+        lista.style.display = "none";
+    });
+
+    if (!estabaAbierta) {
+        seleccionada.classList.add("activa");
+
+        const canciones = seleccionada.querySelector(".canciones");
+        canciones.style.display = "flex";
+    }
+}
+
+function mostrarDetalle(id) {
+
+    const paneles = document.querySelectorAll(".detalle-panel");
+
+    const seleccionado = document.getElementById(id);
+
+
+    const estabaAbierto = seleccionado.classList.contains("activo");
+
+    paneles.forEach(function(panel) {
+        panel.classList.remove("activo");
+    });
+
+    if (!estabaAbierto) {
+        seleccionado.classList.add("activo");
+    }
+}
 </script>
 
 <script src="https://www.youtube.com/iframe_api"></script>
 
+<img src="https://i.pinimg.com/736x/91/ed/f9/91edf907566ee25b6ba1ba4447b2afc0.jpg" alt="Hermes chibi">
+<center><h1>GRACIAS POR LLEGAR HASTA AQUI, ESPEREMOS Q LE HAYA GUSTADO Y HERMES CHIBI LE ESTARA AGRADECIDO SI NOS DAS UN 100 EN SU MATERIA</h1></center>
 </body>
 </html>
