@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPIC:The Musical</title>
-    <link rel="icon" type="image/png" href="https://preview.redd.it/are-we-called-winions-because-thats-the-name-of-jorges-v0-9kqsz122qkyd1.jpeg?auto=webp&s=1dbd54fed706399e8b4da69d6d19130237076e4b">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EPIC: The Musical | Un viaje por la Odisea</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://preview.redd.it/are-we-called-winions-because-thats-the-name-of-jorges-v0-9kqsz122qkyd1.jpeg?auto=webp&amp;s=1dbd54fed706399e8b4da69d6d19130237076e4b" rel="icon" type="image/png"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+
 <style>
-
-
 * {
     margin: 0;
     padding: 0;
@@ -27,8 +27,6 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
 }
-
-
 
 h1, h2, h3 {
     color: #d6b66b;
@@ -49,7 +47,6 @@ h2 {
     padding-bottom: 12px;
 }
 
-
 p {
     font-size: 16px;
     color: #d0cbd0;
@@ -68,7 +65,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
 img {
     max-width: 100%;
     height: auto;
@@ -85,7 +81,119 @@ img:hover {
     box-shadow: 0 0 25px rgba(192, 112, 43, 0.4);
 }
 
+.intro-epic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    width: 100%;
+    min-height: 350px;
+    padding: 30px 4%;
+    box-sizing: border-box;
+    background-color: #08090d;
+}
 
+.intro-epic img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.texto-epic {
+    flex: 1;
+    color: aliceblue;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.texto-epic h2 {
+    color: #d6b66b;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-epic p {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+    .intro-epic {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    .intro-epic img {
+        width: 80%;
+        height: auto;
+    }
+
+    .texto-epic {
+        font-size: 15px;
+    }
+}
+
+.intro-Homero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    width: 100%;
+    min-height: 350px;
+    padding: 30px 4%;
+    box-sizing: border-box;
+    background-color: #08090d;
+}
+
+.texto-Homero {
+    flex: 1;
+    color: aliceblue;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.texto-Homero h2 {
+    color: #d6b66b;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-Homero p {
+    margin-bottom: 15px;
+}
+
+.intro-Homero img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+    .intro-Homero {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    .intro-Homero img {
+        width: 80%;
+        height: auto;
+    }
+
+    .texto-Homero {
+        font-size: 15px;
+    }
+}
 
 section {
     padding: 35px 5%;
@@ -140,26 +248,6 @@ hr {
     margin: 35px 0;
 }
 
-
-
-.titulo-comparacion {
-    width: 100%;
-    text-align: center;
-    padding: 30px 15px;
-}
-
-.titulo-comparacion h2 {
-    font-family: "Cinzel", "Times New Roman", serif;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    color: #858585;
-    margin: 0;
-    text-transform: uppercase;
-    text-shadow: 1px 2px 5px #333333;
-}
-
-
 .contenido {
     display: grid;
     grid-template-columns: 35% minmax(0, 1fr);
@@ -175,7 +263,6 @@ hr {
     width: 100%;
     min-width: 0;
 }
-
 
 .imagen img {
     width: 100%;
@@ -212,7 +299,6 @@ hr {
     overflow-wrap: break-word;
 }
 
-
 img.foto-jorge {
     width: 150px !important;
     height: 180px !important;
@@ -223,12 +309,9 @@ img.foto-jorge {
     margin: 20px auto;
     border-radius: 8px;
 }
-
 img.foto-jorge:hover {
     transform: scale(1.02);
 }
-
-
 
 .music-player {
     background: linear-gradient(
@@ -244,8 +327,6 @@ img.foto-jorge:hover {
     text-align: center;
 }
 
-
-
 .encabezado-acto {
     background-color: #101113;
     min-height: 120px;
@@ -258,7 +339,6 @@ img.foto-jorge:hover {
     color: aliceblue;
     letter-spacing: 5px;
 }
-
 
 .sagas {
     display: grid;
@@ -295,7 +375,6 @@ img.foto-jorge:hover {
     color: #d4af37;
 }
 
-
 .canciones {
     display: none;
     flex-direction: column;
@@ -317,7 +396,6 @@ img.foto-jorge:hover {
     color: white;
 }
 
-
 .reproductor {
     background-color: #171717;
     border: 1px solid #b08d57;
@@ -338,9 +416,7 @@ img.foto-jorge:hover {
     aspect-ratio: 16 / 9;
 }
 
-
 @media (max-width: 768px) {
-
     h1 {
         font-size: 29px;
     }
@@ -372,6 +448,7 @@ img.foto-jorge:hover {
     .imagen {
         width: 100%;
     }
+
     .sagas {
         grid-template-columns: repeat(
             auto-fit,
@@ -385,7 +462,6 @@ img.foto-jorge:hover {
         width: 95%;
     }
 }
-
 
 .contenido {
     display: grid;
@@ -401,7 +477,6 @@ img.foto-jorge:hover {
     margin: 50px auto;
 }
 
-
 .imagen {
     width: 100%;
     display: flex;
@@ -410,9 +485,9 @@ img.foto-jorge:hover {
 }
 
 img.foto-jorge {
-    width:200px !important;
+    width: 200px !important;
     height: 230px !important;
-    max-width:200px !important;
+    max-width: 200px !important;
     object-fit: cover;
     border: 2px solid #a87532;
     border-radius: 10px;
@@ -450,7 +525,6 @@ img.foto-jorge {
     text-decoration: none;
 }
 
-
 .informacion {
     width: 100%;
     min-width: 0;
@@ -473,6 +547,197 @@ img.foto-jorge {
     color: #d0cbd0;
 }
 
+.introduccion-viaje {
+    color: aliceblue;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 30px auto;
+    padding: 0 30px;
+    max-width: 1100px;
+}
+
+.mapa-contenedor {
+    position: relative;
+    width: min(850px, 90%);
+    margin: 30px auto;
+}
+
+.mapa-contenedor img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    border: 2px solid #a87532;
+    border-radius: 12px;
+}
+
+.punto-mapa {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 2px solid #f1d28a;
+    border-radius: 50%;
+    background: #8b2929;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.punto-mapa:hover,
+.punto-mapa:focus-visible,
+.punto-mapa.activo {
+    background: #d6b66b;
+    color: #08090d;
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+.punto-troya { top: 34%; left: 95%; }
+.punto-lotofagos { top: 75%; left: 71%; }
+.punto-ciclopes { top: 74%; left: 79%; }
+.punto-eolo { top: 69%; left: 61%; }
+.punto-lestrigones { top: 18%; left: 38%; }
+.punto-circe { top: 9%; left: 21%; }
+.punto-inframundo { top: 26%; left: 4%; }
+.punto-sirenas { top: 41%; left: 19%; }
+.punto-escila { top: 42%; left: 36%; }
+.punto-helios { top: 60%; left: 38%; }
+.punto-caribdis { top: 52%; left: 51%; }
+.punto-calipso { top: 73%; left: 17%; }
+.punto-poseidon { top: 46%; left: 60%; }
+.punto-itaca { top: 39%; left: 61%; }
+
+@media (max-width: 600px) {
+    .punto-mapa {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+}
+
+.recorrido-odiseo {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #101113;
+    border: 1px solid #8b7650;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.recorrido-odiseo h2 {
+    color: #d6b66b;
+    font-family: "Cinzel", serif;
+    margin-bottom: 10px;
+}
+
+.recorrido-odiseo p {
+    color: aliceblue;
+    line-height: 1.6;
+}
+
+.botones-recorrido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.botones-recorrido button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25232a;
+    color: #d6b66b;
+    border: 1px solid #8b7650;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-family: "Cinzel", serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.numero-etapa {
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #8b7650;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botones-recorrido button.activo {
+    background-color: #8b7650;
+    color: #fff;
+    border-color: #d6b66b;
+}
+
+.botones-recorrido button.activo .numero-etapa {
+    background-color: #d6b66b;
+    color: #08090d;
+}
+
+.botones-recorrido button:hover {
+    background-color: #8b7650;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.panel-recorrido {
+    background-color: #1b1a20;
+    border-left: 4px solid #d6b66b;
+    border-radius: 6px;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: justify;
+    min-height: 120px;
+}
+
+.panel-recorrido h3 {
+    color: #d6b66b;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.panel-recorrido p {
+    color: aliceblue;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .introduccion-viaje {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    .recorrido-odiseo {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .botones-recorrido button {
+        flex: 1 1 40%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .panel-recorrido {
+        padding: 18px;
+    }
+}
 
 .personaje {
     display: grid;
@@ -496,7 +761,28 @@ img.foto-jorge {
     padding-top: 5px;
 }
 
+.boton-curiosidad {
+    background-color: transparent;
+    color: #d6b66b;
+    border: 1px solid #8b7650;
+    padding: 10px 20px;
+    font-family: "Cinzel", serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.boton-curiosidad:hover {
+    background-color: #25232a;
+    color: white;
+}
+
+.contenido-curiosidad {
+    display: none;
+    color: aliceblue;
+    padding: 12px;
+    text-align: justify;
+    line-height: 1.6;
+}
 
 @media (max-width: 768px) {
     .contenido {
@@ -514,131 +800,158 @@ img.foto-jorge {
         font-size: 24px;
     }
 }
+
+/* DISEÑO DE LAS FICHAS DE PERSONAJES */
 .ficha-personaje {
     display: grid;
-    grid-template-columns: 32% 1fr;
-    gap: 25px;
-    width: 90%;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 30px;
     max-width: 1100px;
     margin: 40px auto;
-    padding: 25px;
-    background: #111114;
-    border: 1px solid #292323;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    padding: 28px;
+    background: linear-gradient(145deg, #171619, #0d0d10);
+    border: 1px solid #72552d;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+    align-items: start;
+}
+
+.ficha-imagen {
+    width: 100%;
+    position: sticky;
+    top: 100px;
 }
 
 .ficha-imagen img {
     width: 100%;
-    height: 100%;
-    min-height: 380px;
-    max-height: 500px;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    border: 1px solid #72552d;
+    border-radius: 12px;
+    border: 2px solid #a87532;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
 .ficha-contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+    min-width: 0;
 }
 
 .ficha-titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     color: #d6b66b;
     border-bottom: 1px solid #72552d;
     padding-bottom: 12px;
 }
 
 .ficha-titulo h3 {
-    font-family: Georgia, serif;
-    font-size: 27px;
-    letter-spacing: 3px;
+    font-size: 28px;
+    letter-spacing: 4px;
     margin: 0;
 }
 
-.ficha-titulo span {
-    color: #d6b66b;
-}
-
 .subtitulo-ficha {
-    color: #b9a47c;
-    font-size: 13px;
     text-align: center;
+    color: #c9a66b;
     font-style: italic;
     margin: 12px 0 25px;
 }
 
 .ficha-datos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
     margin-bottom: 25px;
 }
 
 .ficha-datos div {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px;
+    background: #211d19;
+    border-left: 3px solid #b68139;
+    border-radius: 5px;
 }
 
 .ficha-datos strong {
-    background: #a87532;
-    color: #111;
-    font-size: 10px;
-    padding: 5px 8px;
-    border-radius: 3px;
-    min-width: 75px;
-    text-align: center;
+    color: #d6b66b;
+    font-size: 11px;
+    letter-spacing: 1px;
 }
 
 .ficha-datos span {
-    color: #e5e1d8;
-    font-size: 13px;
+    color: #eee5d8;
+    font-size: 14px;
 }
 
 .ficha-descripcion {
+    line-height: 1.8;
+    color: #e5e1d8;
     border-top: 1px solid #72552d;
     padding-top: 15px;
 }
 
 .ficha-descripcion p {
-    color: #d0cbd0;
-    font-size: 14px;
-    line-height: 1.8;
     text-align: justify;
+    margin-bottom: 15px;
 }
 
 .ficha-enlaces {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ficha-enlaces button {
+    background: #9b692d;
+    color: #100d09;
+    border: 1px solid #d6b66b;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ficha-enlaces button:hover {
+    background: #d6b66b;
+    transform: translateY(-2px);
+}
+
+.detalle-panel {
+    display: none;
+    padding: 16px;
     margin-top: 15px;
-    font-size: 13px;
+    background: #211d19;
+    border-left: 3px solid #d6b66b;
+    border-radius: 6px;
+    color: #e5e1d8;
+    line-height: 1.7;
 }
 
-.ficha-enlaces a {
-    color: #c99b59;
-    text-decoration: underline;
+.detalle-panel.activo {
+    display: block;
 }
 
-.ficha-enlaces span {
+.detalle-panel h4 {
     color: #d6b66b;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .ficha-personaje {
         grid-template-columns: 1fr;
-        width: 95%;
+        padding: 18px;
+        margin: 20px 12px;
     }
 
-    .ficha-imagen img {
-        height: 350px;
-        min-height: auto;
+    .ficha-imagen {
+        position: static;
+        max-width: 320px;
+        margin: auto;
     }
 
     .ficha-datos {
@@ -646,37 +959,143 @@ img.foto-jorge {
     }
 
     .ficha-titulo h3 {
-        font-size: 22px;
+        font-size: 23px;
     }
 }
-.ficha-enlaces button {
-    background: none;
-    border: none;
-    color: #c99b59;
-    text-decoration: underline;
-    font-family: Georgia, serif;
-    font-size: 13px;
-    cursor: pointer;
+
+.enemigo {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    max-width: 1250px;
+    margin: 45px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #171820, #0d1018);
+    border: 1px solid #665239;
+    border-left: 4px solid #a87532;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+    box-sizing: border-box;
 }
 
-.ficha-enlaces button:hover {
-    color: #f5d58b;
-}
-.detalle-panel {
-    display: none;
-    margin-top: 20px;
-    padding: 15px;
-    background: #19171a;
-    border-left: 3px solid #a87532;
-    border-radius: 4px;
-}
-.detalle-panel.activo {
-    display: block;
+.enemigo:hover {
+    border-color: #c49a58;
+    box-shadow: 0 0 20px rgba(168, 117, 50, 0.18);
+    transform: translateY(-3px);
 }
 
-.detalle-panel h4 {
+.enemigo img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    margin: 0;
+    border: 2px solid #80633e;
+    border-radius: 9px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+}
+
+.descripcion-enemigo {
+    min-width: 0;
+    color: #e5e1d8;
+    padding: 5px 10px;
+}
+
+.descripcion-enemigo h3 {
     color: #d6b66b;
-    margin-bottom: 10px;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 0 0 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #72552d;
+}
+
+.descripcion-enemigo p {
+    color: #d0cbd0;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.enemigo .boton-curiosidad {
+    background: transparent;
+    color: #d6b66b;
+    border: 1px solid #8b7650;
+    padding: 10px 20px;
+    margin-top: 8px;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enemigo .boton-curiosidad:hover {
+    background: #72552d;
+    color: white;
+}
+
+.enemigo .contenido-curiosidad {
+    display: none;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: #191a21;
+    border-left: 3px solid #a87532;
+    border-radius: 5px;
+    color: #d0cbd0;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .enemigo {
+        grid-template-columns: 1fr;
+        width: 94%;
+        padding: 18px;
+        gap: 15px;
+    }
+
+    .enemigo img {
+        width: 100%;
+        max-width: 300px;
+        height: 320px;
+        margin: 0 auto;
+    }
+
+    .descripcion-enemigo {
+        padding: 5px;
+    }
+
+    .descripcion-enemigo h3 {
+        font-size: 21px;
+    }
+
+    .descripcion-enemigo p {
+        font-size: 14px;
+    }
+}
+
+.enemigo button.boton-curiosidad {
+    color: #d6b66b !important;
+    font-size: 14px !important;
+    font-family: Georgia, serif !important;
+    font-weight: bold !important;
+    background-color: #171820 !important;
+    border: 1px solid #a87532 !important;
+    padding: 10px 20px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+    text-indent: 0 !important;
+    -webkit-text-fill-color: #d6b66b !important;
+}
+
+.enemigo button.boton-curiosidad:hover {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    background-color: #72552d !important;
 }
 
 .detalle-panel p {
@@ -710,39 +1129,1203 @@ img.foto-jorge {
     transition: color 0.35s ease;
 }
 
+.barra-epic .navbar-brand {
+    color: #d6b66b;
+    font-family: "Cinzel", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.barra-epic .nav-link {
+    color: aliceblue;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.barra-epic .nav-link:hover {
+    color: #d6b66b;
+}
+
+html {
+    scroll-padding-top: 80px;
+}
+
+/* ===== ESTILO GENERAL Y ORDEN VISUAL ===== */
+:root {
+    color-scheme: dark;
+    --oro: #d6b66b;
+    --oro-claro: #f0d89a;
+    --fondo: #08090d;
+    --panel: #12131a;
+    --borde: rgba(214,182,107,.35);
+}
+
+body {
+    background: radial-gradient(
+        ellipse at top,
+        #171521 0,
+        #08090d 48rem
+    );
+}
+
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
+p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+#inicio {
+    width: 100%;
+    height: clamp(260px, 48vw, 620px);
+    object-fit: cover;
+    object-position: center 42%;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: 0 18px 45px rgba(0,0,0,.45);
+}
+
+.barra-epic {
+    background: rgba(8,9,13,.94);
+    border-bottom: 1px solid var(--borde);
+    backdrop-filter: blur(12px);
+}
+
+.barra-epic .navbar-brand {
+    letter-spacing: 4px;
+}
+
+.barra-epic .nav-link {
+    font-size: .92rem;
+}
+
+.barra-epic .nav-link:focus-visible,
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--oro-claro);
+    outline-offset: 4px;
+}
+
+.intro-epic, .intro-Homero {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.intro-epic img, .intro-Homero img {
+    max-width: min(38%, 390px);
+    height: 340px;
+    object-fit: cover;
+    border: 1px solid var(--borde);
+}
+
+.encabezado-acto {
+    max-width: 1200px;
+    margin: 55px auto 20px;
+    border: 1px solid var(--borde);
+    border-left: 4px solid var(--oro);
+    border-radius: 10px;
+    background: linear-gradient(110deg, #1d1a20, #0d1017);
+}
+
+.sagas {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.saga {
+    overflow: hidden;
+    background: linear-gradient(145deg, #1a1920, #101116);
+    border-color: rgba(214,182,107,.42);
+    box-shadow: 0 10px 25px rgba(0,0,0,.22);
+}
+
+.saga img {
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 16px;
+}
+
+.saga h2 {
+    font-size: 1.12rem;
+    border: 0;
+    padding: 8px 0;
+}
+
+.canciones button {
+    min-height: 44px;
+    font-family: Georgia, serif;
+    transition: .25s ease;
+}
+
+.canciones button:hover {
+    transform: translateX(3px);
+}
+
+.linea-tiempo {
+    width: min(1150px, 92%);
+    margin: 38px auto 50px;
+    padding: clamp(22px, 4vw, 42px);
+    background: linear-gradient(145deg, #17151d, #0c1018);
+    border: 1px solid var(--borde);
+    border-radius: 18px;
+    box-shadow: 0 15px 38px rgba(0,0,0,.28);
+}
+
+.seccion-kicker {
+    color: #a99773;
+    text-align: center;
+    font-size: .72rem;
+    letter-spacing: .28em;
+}
+
+.linea-tiempo > h2 {
+    margin: 8px 0 5px;
+    border: 0;
+}
+
+.linea-intro {
+    color: #bdb7aa;
+    text-align: center;
+    margin: 0 auto 28px;
+}
+
+.tiempo-grupo {
+    margin-top: 26px;
+}
+
+.tiempo-grupo h3 {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--oro);
+    border-bottom: 1px solid var(--borde);
+    padding-bottom: 10px;
+}
+
+.tiempo-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.acto-uno {
+    grid-template-columns: repeat(5, minmax(0,1fr));
+}
+
+.acto-dos {
+    grid-template-columns: repeat(4, minmax(0,1fr));
+}
+
+.tiempo-item {
+    min-width: 0;
+    min-height: 105px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    color: #eee7d8;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(214,182,107,.28);
+    border-radius: 10px;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    transition: transform .25s, background .25s, border-color .25s;
+}
+
+.tiempo-item span {
+    color: var(--oro);
+    font-size: .78rem;
+    letter-spacing: .16em;
+}
+
+.tiempo-item b {
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tiempo-item:hover {
+    transform: translateY(-4px);
+    background: rgba(214,182,107,.12);
+    border-color: var(--oro);
+}
+
+.reproductor {
+    width: min(900px, 94%);
+    padding: clamp(16px, 3vw, 30px);
+    background: linear-gradient(145deg, #1b1920, #0c1018);
+    box-shadow: 0 12px 32px rgba(0,0,0,.3);
+}
+
+#youtubePlayer {
+    max-width: 100%;
+}
+
+.enemigo, .contenido {
+    box-shadow: 0 12px 32px rgba(0,0,0,.25);
+}
+
+.recorrido-odiseo {
+    box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+.redes a {
+    transition: .25s ease;
+}
+
+footer {
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .acto-uno {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+
+    .acto-dos {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .intro-epic, .intro-Homero {
+        flex-direction: column;
+        padding: 22px 16px;
+    }
+
+    .intro-epic img, .intro-Homero img {
+        width: min(82%, 340px);
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto-epic, .texto-Homero {
+        width: 100%;
+    }
+
+    .acto-uno, .acto-dos {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .tiempo-item {
+        min-height: 92px;
+    }
+
+    .linea-tiempo {
+        width: 94%;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .acto-uno, .acto-dos {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .tiempo-item {
+        padding: 12px 6px;
+    }
+
+    .tiempo-item b {
+        font-size: .78rem;
+    }
+}
+
+/* Carrusel de comparación */
+.comparacion-carrusel {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 35px 25px;
+    background: linear-gradient(145deg, #11121a, #08090d);
+    border: 1px solid #72552d;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(166, 120, 48, 0.15);
+    text-align: center;
+}
+
+.comparacion-carrusel h1 {
+    color: #d6b66b;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 12px rgba(214, 182, 107, 0.4);
+}
+
+.intro-comparacion {
+    color: #c9c3b7;
+    max-width: 750px;
+    margin: 20px auto 35px;
+    text-align: center;
+}
+
+.carrusel-contenedor {
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.comparacion-slide {
+    display: none;
+    animation: aparecer 0.5s ease;
+}
+
+.comparacion-slide.activa {
+    display: block;
+}
+
+.comparacion-slide h2 {
+    color: #d6b66b;
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+
+.comparacion-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.comparacion-card {
+    min-height: 180px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.comparacion-card:hover {
+    transform: translateY(-5px);
+}
+
+.comparacion-card.epic {
+    background: linear-gradient(145deg, #241616, #151014);
+    border: 1px solid #9e4a3d;
+    border-top: 4px solid #b34b3e;
+}
+
+.comparacion-card.odisea {
+    background: linear-gradient(145deg, #171c28, #10141d);
+    border: 1px solid #52718e;
+    border-top: 4px solid #6489ae;
+}
+
+.comparacion-card h3 {
+    margin: 0 0 18px;
+    color: #d6b66b;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.comparacion-card p {
+    margin: 0;
+    color: #e5e1d8;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.controles-carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.boton-carrusel {
+    width: 42px;
+    height: 42px;
+    background: #72552d;
+    color: #fff0cc;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-carrusel:hover {
+    background: #b18a45;
+    transform: scale(1.1);
+}
+
+.indicadores {
+    display: flex;
+    gap: 10px;
+}
+
+.indicador {
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    background: #625b50;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.indicador.activo {
+    background: #d6b66b;
+    transform: scale(1.3);
+}
+
+.numero-diapositiva {
+    margin: 15px 0 0;
+    color: #b9a77e;
+    font-size: 14px;
+    text-align: center;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 650px) {
+    .comparacion-columnas {
+        grid-template-columns: 1fr;
+    }
+
+    .comparacion-carrusel {
+        padding: 25px 15px;
+    }
+
+    .comparacion-carrusel h1 {
+        font-size: 23px;
+    }
+
+    .comparacion-card {
+        min-height: auto;
+    }
+}
+
+#bienvenida {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.9)),
+        url("https://images.unsplash.com/photo-1555993539-1732b0258235") center / cover;
+    text-align: center;
+}
+
+.contenido-bienvenida {
+    padding: 35px;
+    color: #e5e1d8;
+}
+
+.contenido-bienvenida h1 {
+    color: #d6b66b;
+    font-size: 42px;
+    text-shadow: 0 0 15px #a87532;
+}
+
+.subtitulo-bienvenida {
+    color: #c5a66b;
+    letter-spacing: 4px;
+}
+
+.contenido-bienvenida button {
+    margin-top: 25px;
+    padding: 13px 35px;
+    background: #a87532;
+    color: white;
+    border: 1px solid #e0bd72;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.contenido-bienvenida button:hover {
+    background: #d6b66b;
+    color: #08090d;
+    transform: scale(1.08);
+}
+
+@media (max-width: 600px) {
+    .contenido-bienvenida {
+        padding: 20px;
+    }
+
+    .contenido-bienvenida h1 {
+        font-size: 32px;
+    }
+
+    .subtitulo-bienvenida {
+        letter-spacing: 2px;
+    }
+}
+
+#diccionario,
+#bestiario {
+    width: min(1200px, 94%);
+    padding: clamp(22px, 4vw, 40px);
+    background: linear-gradient(145deg, #17151d, #0c1018);
+    border-color: var(--borde);
+}
+
+#diccionario > h1,
+#bestiario > h1 {
+    margin-top: 0;
+    color: var(--oro);
+}
+
+#diccionario > p,
+#bestiario > p {
+    margin: 0 auto 28px;
+    color: #c9c3b7;
+    text-align: center;
+}
+
+.diccionario-grid,
+.bestiario-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 18px;
+}
+
+.termino,
+.criatura {
+    min-width: 0;
+    padding: 20px;
+    background: linear-gradient(145deg, #211d19, #14151a);
+    border: 1px solid rgba(214,182,107,.3);
+    border-radius: 8px;
+}
+
+.termino h2,
+.criatura h2 {
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    color: var(--oro-claro);
+    font-size: 21px;
+    text-align: left;
+}
+
+.termino p,
+.criatura p {
+    margin: 0;
+    color: #d0cbd0;
+    font-size: 15px;
+    line-height: 1.75;
+    text-align: left;
+}
+
+.criatura {
+    padding: 14px;
+    overflow: hidden;
+}
+
+.criatura img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin: 0 0 16px;
+    object-fit: cover;
+    border: 1px solid rgba(214,182,107,.3);
+    border-radius: 6px;
+}
+
+.criatura h2 {
+    padding: 0 4px;
+    border: 0;
+}
+
+.criatura p {
+    padding: 0 4px 4px;
+}
+
+#trivia {
+    width: min(900px, 94%);
+    padding: clamp(22px, 4vw, 40px);
+    background: linear-gradient(145deg, #17151d, #0c1018);
+    border-color: var(--borde);
+}
+
+#trivia > h1 {
+    margin-top: 0;
+    color: var(--oro);
+}
+
+#trivia > p {
+    margin: 0 auto 28px;
+    color: #c9c3b7;
+    text-align: center;
+}
+
+.trivia-caja {
+    max-width: 700px;
+    margin: 30px auto 0;
+    padding: clamp(18px, 4vw, 30px);
+    background: #15151b;
+    border: 1px solid #a87532;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.trivia-caja h2 {
+    margin: 0 0 22px;
+    color: var(--oro);
+    font-size: 22px;
+}
+
+#opciones-trivia {
+    display: grid;
+    gap: 10px;
+}
+
+.opcion-trivia {
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 16px;
+    background: #25232a;
+    color: #e5e1d8;
+    border: 1px solid #72552d;
+    border-radius: 7px;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.opcion-trivia:hover:not(:disabled) {
+    background: #72552d;
+}
+
+.opcion-trivia:disabled {
+    cursor: default;
+}
+
+.opcion-trivia.correcta {
+    background: #244b38;
+    border-color: #69b487;
+}
+
+.opcion-trivia.incorrecta {
+    background: #542b2b;
+    border-color: #c36c64;
+}
+
+#resultado-trivia {
+    min-height: 1.7em;
+    margin: 18px 0 0;
+    color: #f0d89a;
+    text-align: center;
+}
+
+#siguiente-trivia {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #a87532;
+    color: white;
+    border: 1px solid #d6b66b;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#siguiente-trivia:hover:not(:disabled) {
+    background: #d6b66b;
+    color: #08090d;
+}
+
+#siguiente-trivia:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#puntuacion-trivia {
+    margin: 22px 0 0;
+    color: #c9c3b7;
+    font-size: 16px;
+}
+
+/* Efecto para tarjetas */
+.saga,
+.termino,
+.criatura,
+.trivia-caja {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.saga:hover,
+.termino:hover,
+.criatura:hover,
+.trivia-caja:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px rgba(214, 182, 107, .35);
+}
+
+/* Efecto para imágenes */
+.saga img,
+.criatura img {
+    transition: transform .4s ease, filter .4s ease;
+}
+
+.saga img:hover,
+.criatura img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.15);
+}
+
+/* Efecto para botones */
+button {
+    transition: background .3s ease, transform .3s ease;
+}
+
+button:hover {
+    filter: brightness(1.15);
+}
+
+#volver-arriba {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #d6b66b;
+    background: #72552d;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 0 12px rgba(214, 182, 107, .4);
+}
+
+#volver-arriba:hover {
+    background: #d6b66b;
+    color: #08090d;
+}
+
+.separador-griego {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 55px auto;
+    width: 85%;
+    color: #d6b66b;
+}
+
+.separador-griego::before,
+.separador-griego::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #a87532,
+        #d6b66b,
+        #a87532,
+        transparent
+    );
+}
+
+.separador-griego span {
+    font-size: 25px;
+    text-shadow: 0 0 10px #d6b66b;
+}
 </style>
-<body bgcolor="black">
- <img src="https://epicthemusical.com/cdn/shop/files/1._Troy_Saga_Cover_FINAL_copy.webp?v=1786117256&width=1920" alt="Inicio de Pagina, Caballo de troya" width="2100" height="1750">
- <div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
- <center><h1 style="color: aliceblue;">EPIC:the musical</h1></center>
- <h3 style="text-align: right; color: rgb(227, 228, 222);">By: Jorge Rivera-Herrans</h3>
- </div>
- <div style="display: flex;align-items: flex-start;gap: 15px;">
-<img src="https://m.media-amazon.com/images/M/MV5BNDhkZGY0ODEtMjk1Zi00ZjYyLWJhMTctNDY4YWRmMjRkNTFjXkEyXkFqcGc@._V1_.jpg" alt="Logo de EPIC" width="400" height="400" style="margin-right: 200px;">
-<h2 style="margin-top: 0; text-align: left;color: aliceblue;">¿Qué es EPIC:the musical?</h2>
+</head>
+
+<body>
+
+<div id="bienvenida" role="dialog" aria-modal="true" aria-labelledby="titulo-bienvenida">
+    <div class="contenido-bienvenida">
+        <p class="subtitulo-bienvenida">UN VIAJE A TRAVÉS DE LA MITOLOGÍA</p>
+        <h1 id="titulo-bienvenida">EPIC: THE MUSICAL</h1>
+        <p>Una historia de dioses, héroes, monstruos y destinos.</p>
+        <button type="button" onclick="entrarPagina()">ENTRAR</button>
+    </div>
 </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark barra-epic sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">EPIC</a>
+
+        <button class="navbar-toggler" data-bs-target="#menuEpic" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuEpic">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#comparacion">Comparación</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#diccionario">Diccionario</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#bestiario">Bestiario</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#trivia">Trivia</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#epic">EPIC:the musical</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#sagas">Sagas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#linea-tiempo">Línea temporal</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#recorrido">Recorrido</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#personajes">Personajes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#jorge">Jorge Herrans</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<img
+    alt="Inicio de Pagina, Caballo de troya"
+    height="1750"
+    id="inicio"
+    src="https://epicthemusical.com/cdn/shop/files/1._Troy_Saga_Cover_FINAL_copy.webp?v=1786117256&amp;width=1920"
+    width="2100"
+/>
+
 <div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
- <center><h1 style="color: aliceblue;">La Odisea</h1></center>
- <h3 style="text-align: right; color: rgb(227, 228, 222);">By: Homero</h3>
- </div>
- <img src="https://www.infobae.com/resizer/v2/UL6DCBEPOVFTTPSUPEEKCRT4HQ.jpg?auth=e0fb5903039bcdb28841fc3f9df6f1d527374d63b7da8f00ae9ea1f549deb929&smart=true&width=1200&height=1200&quality=85" alt="Imagen de Homero" width="400" height="400" style="margin-left: 1500px;">
+    <center>
+        <h1 id="epic" style="color: aliceblue;">EPIC:the musical</h1>
+    </center>
+    <h3 style="text-align: right; color: rgb(227, 228, 222);">
+        By: Jorge Rivera-Herrans
+    </h3>
+</div>
+
+<div class="intro-epic">
+    <img
+        alt="Imagen de EPIC: The Musical"
+        decoding="async"
+        loading="lazy"
+        src="https://m.media-amazon.com/images/M/MV5BNDhkZGY0ODEtMjk1Zi00ZjYyLWJhMTctNDY4YWRmMjRkNTFjXkEyXkFqcGc@._V1_.jpg"
+    />
+
+    <div class="texto-epic">
+        <h2>¿Qué es EPIC: The Musical?</h2>
+
+        <p>
+            EPIC: The Musical es un musical conceptual inspirado en el poema
+            épico La Odisea, atribuido al poeta griego Homero. La obra representa
+            el largo viaje de aproximadamente diez años que realiza Odiseo
+            (conocido también como Ulises) desde la guerra de Troya hasta su
+            regreso a Ítaca, su reino, donde espera reencontrarse con su esposa
+            Penélope y su hijo Telémaco. A lo largo de esta travesía, el
+            protagonista debe enfrentarse a numerosas dificultades, criaturas
+            mitológicas y dioses que ponen a prueba su valentía, inteligencia
+            y determinación.
+        </p>
+
+        <p>
+            Creado por Jorge Rivera-Herrans, este musical cuenta su historia
+            principalmente mediante canciones que transmiten las emociones,
+            conflictos y desafíos de los personajes. Su desarrollo también
+            destaca por la participación de la comunidad de fans, quienes
+            crearon diversas animaciones para representar visualmente las
+            escenas y canciones de la obra. El propio Jorge ha mostrado su
+            apoyo a estas creaciones, contribuyendo a que EPIC: The Musical
+            se convierta en una experiencia que combina música, narrativa
+            y arte visual.
+        </p>
+    </div>
+</div>
+<div class="intro-Homero">
+    <div class="texto-Homero">
+        <h2>Homero y La Odisea</h2>
+
+        <p>
+            Homero fue un poeta de la Antigua Grecia, reconocido
+            tradicionalmente como el autor de dos de las obras más
+            importantes de la literatura clásica: La Ilíada y La Odisea.
+            Aunque existen dudas sobre algunos aspectos de su vida,
+            su legado ha sido fundamental para la literatura y la
+            cultura occidental.
+        </p>
+
+        <p>
+            La Odisea es un poema épico que narra las aventuras de
+            Odiseo (Ulises) durante su largo viaje de regreso a Ítaca
+            después de la guerra de Troya. En su travesía debe superar
+            numerosos obstáculos, enfrentarse a criaturas mitológicas
+            y recibir la intervención de los dioses, mientras lucha
+            por reencontrarse con su esposa Penélope y su hijo Telémaco.
+        </p>
+    </div>
+
+    <img
+        alt="Imagen de Homero"
+        decoding="async"
+        loading="lazy"
+        src="https://www.infobae.com/resizer/v2/UL6DCBEPOVFTTPSUPEEKCRT4HQ.jpg?auth=e0fb5903039bcdb28841fc3f9df6f1d527374d63b7da8f00ae9ea1f549deb929&amp;smart=true&amp;width=1200&amp;height=1200"
+    />
+</div>
+
 <div style="background-color: #101113; min-height: 120px; padding: 10px; color: white;"></div>
-<img src="https://i.pinimg.com/736x/53/a5/78/53a5786a5dcba0cb8613b7d1555853c5.jpg" alt="Comparación:EPIC" width="435" height="550" style="margin-left: 340px;">
-<img src="https://www.planetadelibros.us/usuaris/libros/thumbs/d3433170-4f87-49cd-beec-68f1b3927145/d_1200_1200/385051_portada_odisea-comic_homero_202310231106.webp" alt="Comparación:Odisea" width="435" height="550" style="margin-left: 1245px;">
-<div class="titulo-comparacion">
-    <h2>LAS DIFERENCIAS ENTRE EPIC: THE MUSICAL Y LA ODISEA</h2>
-     <h3>Origen de ambas obras</h3>
-    <p>
-        
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
+<section class="comparacion-carrusel" id="comparacion">
+    <h1>EPIC: THE MUSICAL VS. LA ODISEA</h1>
+
+    <p class="intro-comparacion">
+        Dos formas de contar una misma historia:
+        descubre las diferencias entre el musical de Jorge Rivera-Herrans
+        y la obra clásica atribuida a Homero.
     </p>
 
-    <h3>Diferencias en la historia</h3>
-    <p>
-        
+    <div class="carrusel-contenedor" aria-live="polite">
+        <div class="comparacion-slide activa">
+            <h2>1. Origen y formato</h2>
+            <div class="comparacion-columnas">
+                <div class="comparacion-card epic">
+                    <h3>EPIC: THE MUSICAL</h3>
+                    <p>
+                        Es un musical moderno compuesto por Jorge
+                        Rivera-Herrans. Utiliza canciones, melodías y
+                        diálogos para narrar la historia de Odiseo.
+                    </p>
+                </div>
+                <div class="comparacion-card odisea">
+                    <h3>LA ODISEA</h3>
+                    <p>
+                        Es un poema épico de la Antigua Grecia,
+                        atribuido a Homero. Está escrito en versos
+                        y relata las aventuras de Odiseo después
+                        de la guerra de Troya.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparacion-slide">
+            <h2>2. El comienzo de la historia</h2>
+            <div class="comparacion-columnas">
+                <div class="comparacion-card epic">
+                    <h3>EPIC: THE MUSICAL</h3>
+                    <p>
+                        Comienza mostrando a Odiseo durante la guerra
+                        de Troya. Se centra en sus decisiones como
+                        líder y en las consecuencias de sus acciones.
+                    </p>
+                </div>
+                <div class="comparacion-card odisea">
+                    <h3>LA ODISEA</h3>
+                    <p>
+                        Comienza cuando Odiseo lleva muchos años
+                        lejos de Ítaca. La historia presenta también
+                        la situación de Penélope y Telémaco mientras
+                        esperan su regreso.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparacion-slide">
+            <h2>3. El orden de los acontecimientos</h2>
+            <div class="comparacion-columnas">
+                <div class="comparacion-card epic">
+                    <h3>EPIC: THE MUSICAL</h3>
+                    <p>
+                        Organiza los acontecimientos mediante nueve
+                        sagas musicales. Cada saga representa una
+                        etapa importante del viaje de Odiseo.
+                    </p>
+                </div>
+                <div class="comparacion-card odisea">
+                    <h3>LA ODISEA</h3>
+                    <p>
+                        Utiliza una narración no completamente lineal.
+                        Algunos acontecimientos se cuentan mediante
+                        recuerdos y relatos de los personajes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparacion-slide">
+            <h2>4. Telémaco y su participación</h2>
+            <div class="comparacion-columnas">
+                <div class="comparacion-card epic">
+                    <h3>EPIC: THE MUSICAL</h3>
+                    <p>
+                        Telémaco tiene un papel destacado en la
+                        Wisdom Saga. Se muestra su crecimiento,
+                        sus inseguridades y su deseo de encontrar
+                        a su padre.
+                    </p>
+                </div>
+                <div class="comparacion-card odisea">
+                    <h3>LA ODISEA</h3>
+                    <p>
+                        Telémaco protagoniza los primeros cantos
+                        del poema. Emprende un viaje para buscar
+                        noticias sobre Odiseo y comienza a asumir
+                        responsabilidades en Ítaca.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparacion-slide">
+            <h2>5. El regreso a Ítaca</h2>
+            <div class="comparacion-columnas">
+                <div class="comparacion-card epic">
+                    <h3>EPIC: THE MUSICAL</h3>
+                    <p>
+                        El regreso de Odiseo representa el final
+                        de su largo recorrido. La historia destaca
+                        sus emociones, sus decisiones y el reencuentro
+                        con su familia.
+                    </p>
+                </div>
+                <div class="comparacion-card odisea">
+                    <h3>LA ODISEA</h3>
+                    <p>
+                        Odiseo regresa a Ítaca disfrazado para
+                        recuperar su hogar. Finalmente se reúne
+                        con Penélope y restablece su lugar como rey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controles-carrusel">
+        <button class="boton-carrusel" type="button" aria-label="Diapositiva anterior" onclick="cambiarComparacion(-1)">
+            &#10094;
+        </button>
+
+        <div class="indicadores" aria-label="Seleccionar diapositiva">
+            <button class="indicador activo" type="button" aria-label="Diapositiva 1" onclick="irAComparacion(0)"></button>
+            <button class="indicador" type="button" aria-label="Diapositiva 2" onclick="irAComparacion(1)"></button>
+            <button class="indicador" type="button" aria-label="Diapositiva 3" onclick="irAComparacion(2)"></button>
+            <button class="indicador" type="button" aria-label="Diapositiva 4" onclick="irAComparacion(3)"></button>
+            <button class="indicador" type="button" aria-label="Diapositiva 5" onclick="irAComparacion(4)"></button>
+        </div>
+
+        <button class="boton-carrusel" type="button" aria-label="Diapositiva siguiente" onclick="cambiarComparacion(1)">
+            &#10095;
+        </button>
+    </div>
+
+    <p class="numero-diapositiva">
+        <span id="numeroActual">1</span> / 5
     </p>
-</div>
-<div style="background-color: #101113; min-height: 120px; padding: 10px; color: white;">
-    <center>
+</section>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
+<section id="diccionario" aria-labelledby="titulo-diccionario">
+    <h1 id="titulo-diccionario">Diccionario mitológico</h1>
+    <p>Conceptos importantes de la cultura y mitología griega.</p>
+
+    <div class="diccionario-grid">
+        <article class="termino">
+            <h2>Kleos</h2>
+            <p>Significa gloria o fama. En EPIC, representa el deseo de Odiseo de ser recordado por sus hazañas.</p>
+        </article>
+
+        <article class="termino">
+            <h2>Xenia</h2>
+            <p>Es la hospitalidad sagrada entre anfitriones y visitantes. Es una regla fundamental de la sociedad griega.</p>
+        </article>
+
+        <article class="termino">
+            <h2>Nostos</h2>
+            <p>Representa el regreso al hogar después de un largo viaje. Es uno de los temas principales de la historia de Odiseo.</p>
+        </article>
+
+        <article class="termino">
+            <h2>Hubris</h2>
+            <p>Es el orgullo excesivo que lleva a una persona a desafiar los límites establecidos por los dioses.</p>
+        </article>
+
+        <article class="termino">
+            <h2>Moira</h2>
+            <p>Representa el destino que corresponde a cada persona, determinado por fuerzas superiores.</p>
+        </article>
+
+        <article class="termino">
+            <h2>Arete</h2>
+            <p>Significa excelencia o virtud. Se relaciona con demostrar valor, habilidad y nobleza mediante las acciones.</p>
+        </article>
+    </div>
+</section>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
+<section id="bestiario" aria-labelledby="titulo-bestiario">
+    <h1 id="titulo-bestiario">Bestiario mitológico</h1>
+    <p>Criaturas y monstruos que forman parte del universo de la Odisea.</p>
+
+    <div class="bestiario-grid">
+        <article class="criatura">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAG59YDZTa6pH0hOZ4AKVmCefK-G-bSSJ0SqiZkQAvxN9Jr05Fw_bwG_b&amp;s=10" alt="Odiseo se enfrenta a Polifemo" loading="lazy" decoding="async">
+            <h2>El Cíclope</h2>
+            <p>Gigante de un solo ojo. Polifemo es uno de los enemigos que Odiseo encuentra durante su viaje.</p>
+        </article>
+
+        <article class="criatura">
+            <img src="https://i.redd.it/sr6p3wjdmnmg1.jpeg" alt="Odiseo y las sirenas" loading="lazy" decoding="async">
+            <h2>Las Sirenas</h2>
+            <p>Seres que atraen a los navegantes mediante sus cantos, conduciéndolos hacia un destino peligroso.</p>
+        </article>
+
+        <article class="criatura">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5eAnuOYXOjtXOdBAj8hAamkvPDIgum9k0q-TX7HBnwDv-nt0sg1XC1uu&amp;s=10" alt="Escila y Caribdis" loading="lazy" decoding="async">
+            <h2>Escila</h2>
+            <p>Monstruo marino que habita en un estrecho y representa una amenaza para los barcos que pasan cerca.</p>
+        </article>
+
+        <article class="criatura">
+            <img src="https://preview.redd.it/charybdis-a-sea-monster-whose-inhalations-formed-a-deadly-v0-botflqzarqg91.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b7735861b465131c1b7a1872c750af2e35ab0042" alt="Caribdis como un monstruo marino dentro de un remolino" loading="lazy" decoding="async">
+            <h2>Caribdis</h2>
+            <p>Monstruo marino asociado con un enorme remolino que amenaza con engullir embarcaciones.</p>
+        </article>
+    </div>
+</section>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
+<div id="sagas" style="background-color: #101113; min-height: 120px; padding: 10px; color: white;">
     <h2>EPIC:the musical; Sagas</h2>
     <p>The Troy Saga</p>
     <p>The Cyclops Saga</p>
@@ -753,12 +2336,89 @@ img.foto-jorge {
     <p>The Wisdom Saga</p>
     <p>The Vengeance Saga</p>
     <p>The Ithaca Saga</p>
-    </center>
 </div>
-<img src="https://i.redd.it/aubtrhj60dee1.png" alt="fondo Sagas" width="1860" height="825">
-<p style="color: aliceblue;">EPIC:the musical se conforma por ocho sagas dividida en 2 actos,dentro de cada saga estan varias canciones que representan una etapa importante del viaje de Odiseo. Estas sagas permiten desarrollar la historia de manera progresiva, mostrando los obstáculos, las decisiones difíciles, los encuentros con seres mitológicos y los cambios que experimenta el rey de Ithaca. A través de sus canciones, EPIC combina elementos de la mitología griega con estilos musicales modernos, diálogos y una narración emocional que permite conocer los pensamientos y conflictos de sus personajes.</p>
-<p style="color: aliceblue;">a continuacion, la explicacion de las 8 sagas y sus canciones:</p>
+
+<img
+    alt="fondo Sagas"
+    decoding="async"
+    height="825"
+    loading="lazy"
+    src="https://i.redd.it/aubtrhj60dee1.png"
+    width="1860"
+/>
+
+<p style="color: aliceblue;">
+    EPIC:the musical se conforma por nueve sagas dividida en 2 actos,dentro de cada saga estan varias canciones que
+    representan una etapa importante del viaje de Odiseo. Estas sagas permiten desarrollar la historia de manera progresiva, mostrando los obstáculos, las decisiones difíciles,
+    los encuentros con seres mitológicos y los cambios que experimenta el rey de Ithaca. A través de sus canciones, EPIC combina elementos de la mitología griega con
+    estilos musicales modernos, diálogos y una narración emocional que permite conocer los pensamientos y conflictos de sus personajes.
+</p>
+
+<p style="color: aliceblue;">
+    a continuacion, la explicación de las 9 sagas y sus canciones:
+</p>
+
 <div style="background-color: #101113; min-height: 120px; padding: 10px; color: white;">
+
+<section aria-labelledby="titulo-linea-tiempo" class="linea-tiempo" id="linea-tiempo">
+    <div class="seccion-kicker">EL VIAJE DE ODISEO</div>
+
+    <h2 id="titulo-linea-tiempo">Las nueve sagas</h2>
+
+    <p class="linea-intro">
+        Explora cada etapa del musical. Selecciona una saga para ir directamente a sus canciones.
+    </p>
+
+    <div class="tiempo-grupo">
+        <h3>Acto I</h3>
+
+        <div class="tiempo-grid acto-uno">
+            <button class="tiempo-item" onclick="irASaga('troy')" type="button">
+                <span>01</span><b>The Troy Saga</b>
+            </button>
+
+            <button class="tiempo-item" onclick="irASaga('cyclops')" type="button">
+                <span>02</span><b>The Cyclops Saga</b>
+            </button>
+
+            <button class="tiempo-item" onclick="irASaga('ocean')" type="button">
+                <span>03</span><b>The Ocean Saga</b>
+            </button>
+
+            <button class="tiempo-item" onclick="irASaga('circe')" type="button">
+                <span>04</span><b>The Circe Saga</b>
+            </button>
+
+            <button class="tiempo-item" onclick="irASaga('underworld')" type="button">
+                <span>05</span><b>The Underworld Saga</b>
+            </button>
+        </div>
+    </div>
+
+    <div class="tiempo-grupo">
+        <h3>Acto II</h3>
+
+        <div class="tiempo-grid acto-dos">
+            <button class="tiempo-item" onclick="irASaga('thunder')" type="button">
+                <span>06</span><b>The Thunder Saga</b>
+            </button>
+
+            <button class="tiempo-item" onclick="irASaga('wisdom')" type="button">
+                <span>07</span><b>The Wisdom Saga</b>
+            </button>
+
+            <button class="tiempo-item" onclick="irASaga('vengeance')" type="button">
+                <span>08</span><b>The Vengeance Saga</b>
+            </button>
+
+            <button class="tiempo-item" onclick="irASaga('ithaca')" type="button">
+                <span>09</span><b>The Ithaca Saga</b>
+            </button>
+        </div>
+    </div>
+</section>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
 
 <div class="encabezado-acto">
     <center><h1>ACTO 1</h1></center>
@@ -771,11 +2431,17 @@ img.foto-jorge {
 <section class="sagas">
 
     <!-- THE TROY SAGA -->
-    <div class="saga" style="--color-saga:#9e3030; --color-fondo-saga:#301515;">
-        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/7/c/b/c/1850481745855849.jpg"
-             alt="The Troy Saga" onclick="mostrarCanciones('troy')">
+    <div class="saga" id="saga-troy" style="--color-saga:#9e3030; --color-fondo-saga:#301515;">
+        <img
+            alt="The Troy Saga"
+            decoding="async"
+            loading="lazy"
+            onclick="mostrarCanciones('troy')"
+            src="https://akamai.sscdn.co/uploadfile/letras/albuns/7/c/b/c/1850481745855849.jpg"
+        />
         <h2>1. The Troy Saga</h2>
-        <div id="troy" class="canciones">
+
+        <div class="canciones" id="troy">
             <button onclick="reproducirCancion(0)">The Horse and the Infant</button>
             <button onclick="reproducirCancion(1)">Just a Man</button>
             <button onclick="reproducirCancion(2)">Full Speed Ahead</button>
@@ -785,11 +2451,17 @@ img.foto-jorge {
     </div>
 
     <!-- THE CYCLOPS SAGA -->
-    <div class="saga" style="--color-saga:#a66b3f; --color-fondo-saga:#302015;">
-        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/6/f/f/a/2045561745855840.jpg"
-             alt="The Cyclops Saga" onclick="mostrarCanciones('cyclops')">
+    <div class="saga" id="saga-cyclops" style="--color-saga:#a66b3f; --color-fondo-saga:#302015;">
+        <img
+            alt="The Cyclops Saga"
+            decoding="async"
+            loading="lazy"
+            onclick="mostrarCanciones('cyclops')"
+            src="https://akamai.sscdn.co/uploadfile/letras/albuns/6/f/f/a/2045561745855840.jpg"
+        />
         <h2>2. The Cyclops Saga</h2>
-        <div id="cyclops" class="canciones">
+
+        <div class="canciones" id="cyclops">
             <button onclick="reproducirCancion(5)">Polyphemus</button>
             <button onclick="reproducirCancion(6)">Survive</button>
             <button onclick="reproducirCancion(7)">Remember Them</button>
@@ -798,11 +2470,17 @@ img.foto-jorge {
     </div>
 
     <!-- THE OCEAN SAGA -->
-    <div class="saga" style="--color-saga:#2679a8; --color-fondo-saga:#102638;">
-        <img src="https://akamai.sscdn.co/letras/360x360/albuns/2/4/5/e/3033221745414872.jpg"
-             alt="The Ocean Saga" onclick="mostrarCanciones('ocean')">
+    <div class="saga" id="saga-ocean" style="--color-saga:#2679a8; --color-fondo-saga:#102638;">
+        <img
+            alt="The Ocean Saga"
+            decoding="async"
+            loading="lazy"
+            onclick="mostrarCanciones('ocean')"
+            src="https://akamai.sscdn.co/letras/360x360/albuns/2/4/5/e/3033221745414872.jpg"
+        />
         <h2>3. The Ocean Saga</h2>
-        <div id="ocean" class="canciones">
+
+        <div class="canciones" id="ocean">
             <button onclick="reproducirCancion(9)">Storm</button>
             <button onclick="reproducirCancion(10)">Luck Runs Out</button>
             <button onclick="reproducirCancion(11)">Keep Your Friends Close</button>
@@ -811,11 +2489,17 @@ img.foto-jorge {
     </div>
 
     <!-- THE CIRCE SAGA -->
-    <div class="saga" style="--color-saga:#9654b8; --color-fondo-saga:#281633;">
-        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/3/7/7/a/3033291745414886.jpg"
-             alt="The Circe Saga" onclick="mostrarCanciones('circe')">
+    <div class="saga" id="saga-circe" style="--color-saga:#9654b8; --color-fondo-saga:#281633;">
+        <img
+            alt="The Circe Saga"
+            decoding="async"
+            loading="lazy"
+            onclick="mostrarCanciones('circe')"
+            src="https://akamai.sscdn.co/uploadfile/letras/albuns/3/7/7/a/3033291745414886.jpg"
+        />
         <h2>4. The Circe Saga</h2>
-        <div id="circe" class="canciones">
+
+        <div class="canciones" id="circe">
             <button onclick="reproducirCancion(13)">Puppeteer</button>
             <button onclick="reproducirCancion(14)">Wouldn't You Like</button>
             <button onclick="reproducirCancion(15)">Done For</button>
@@ -824,11 +2508,17 @@ img.foto-jorge {
     </div>
 
     <!-- THE UNDERWORLD SAGA -->
-    <div class="saga" style="--color-saga:#593b80; --color-fondo-saga:#191126;">
-        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/c/b/4/b/3033361745414912.jpg"
-             alt="The Underworld Saga" onclick="mostrarCanciones('underworld')">
+    <div class="saga" id="saga-underworld" style="--color-saga:#678380; --color-fondo-saga:#3b524d;">
+        <img
+            alt="The Underworld Saga"
+            decoding="async"
+            loading="lazy"
+            onclick="mostrarCanciones('underworld')"
+            src="https://akamai.sscdn.co/uploadfile/letras/albuns/c/b/4/b/3033361745414912.jpg"
+        />
         <h2>5. The Underworld Saga</h2>
-        <div id="underworld" class="canciones">
+
+        <div class="canciones" id="underworld">
             <button onclick="reproducirCancion(17)">The Underworld</button>
             <button onclick="reproducirCancion(18)">No Longer You</button>
             <button onclick="reproducirCancion(19)">Monster</button>
@@ -836,6 +2526,8 @@ img.foto-jorge {
     </div>
 
 </section>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
 
 <div class="encabezado-acto">
     <center><h1>ACTO 2</h1></center>
@@ -848,11 +2540,17 @@ img.foto-jorge {
 <section class="sagas">
 
     <!-- THE THUNDER SAGA -->
-    <div class="saga" style="--color-saga:#d6b43b; --color-fondo-saga:#302a12;">
-        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/5/8/a/f/2284581720180009.jpg"
-             alt="The Thunder Saga" onclick="mostrarCanciones('thunder')">
+    <div class="saga" id="saga-thunder" style="--color-saga:#d6b43b; --color-fondo-saga:#302a12;">
+        <img
+            alt="The Thunder Saga"
+            decoding="async"
+            loading="lazy"
+            onclick="mostrarCanciones('thunder')"
+            src="https://akamai.sscdn.co/uploadfile/letras/albuns/5/8/a/f/2284581720180009.jpg"
+        />
         <h2>6. The Thunder Saga</h2>
-        <div id="thunder" class="canciones">
+
+        <div class="canciones" id="thunder">
             <button onclick="reproducirCancion(20)">Suffering</button>
             <button onclick="reproducirCancion(21)">Different Beast</button>
             <button onclick="reproducirCancion(22)">Scylla</button>
@@ -860,72 +2558,165 @@ img.foto-jorge {
             <button onclick="reproducirCancion(24)">Thunder Bringer</button>
         </div>
     </div>
+<!-- THE WISDOM SAGA -->
+<div class="saga" id="saga-wisdom" style="--color-saga:#c49b45; --color-fondo-saga:#37338cbb;">
+    <img
+        alt="The Wisdom Saga"
+        decoding="async"
+        loading="lazy"
+        onclick="mostrarCanciones('wisdom')"
+        src="https://akamai.sscdn.co/uploadfile/letras/albuns/0/2/e/7/2356681725278130.jpg"
+    />
+    <h2>7. The Wisdom Saga</h2>
 
-    <!-- THE WISDOM SAGA -->
-    <div class="saga" style="--color-saga:#c49b45; --color-fondo-saga:#302817;">
-        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/0/2/e/7/2356681725278130.jpg"
-             alt="The Wisdom Saga" onclick="mostrarCanciones('wisdom')">
-        <h2>7. The Wisdom Saga</h2>
-        <div id="wisdom" class="canciones">
-            <button onclick="reproducirCancion(25)">Legendary</button>
-            <button onclick="reproducirCancion(26)">Little Wolf</button>
-            <button onclick="reproducirCancion(27)">We'll Be Fine</button>
-            <button onclick="reproducirCancion(28)">Love in Paradise</button>
-            <button onclick="reproducirCancion(29)">God Games</button>
-        </div>
+    <div class="canciones" id="wisdom">
+        <button onclick="reproducirCancion(25)">Legendary</button>
+        <button onclick="reproducirCancion(26)">Little Wolf</button>
+        <button onclick="reproducirCancion(27)">We'll Be Fine</button>
+        <button onclick="reproducirCancion(28)">Love in Paradise</button>
+        <button onclick="reproducirCancion(29)">God Games</button>
     </div>
+</div>
 
-    <!-- THE VENGEANCE SAGA -->
-    <div class="saga" style="--color-saga:#a52845; --color-fondo-saga:#30121d;">
-        <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/f/9/5/b/2425661730467440.jpg"
-             alt="The Vengeance Saga" onclick="mostrarCanciones('vengeance')">
-        <h2>8. The Vengeance Saga</h2>
-        <div id="vengeance" class="canciones">
-            <button onclick="reproducirCancion(30)">Not Sorry for Loving You</button>
-            <button onclick="reproducirCancion(31)">Dangerous</button>
-            <button onclick="reproducirCancion(32)">Charybdis</button>
-            <button onclick="reproducirCancion(33)">Get in the Water</button>
-            <button onclick="reproducirCancion(34)">Six Hundred Strike</button>
-        </div>
+<!-- THE VENGEANCE SAGA -->
+<div class="saga" id="saga-vengeance" style="--color-saga:#4b8d9c; --color-fondo-saga:#185052;">
+    <img
+        alt="The Vengeance Saga"
+        decoding="async"
+        loading="lazy"
+        onclick="mostrarCanciones('vengeance')"
+        src="https://akamai.sscdn.co/uploadfile/letras/albuns/f/9/5/b/2425661730467440.jpg"
+    />
+    <h2>8. The Vengeance Saga</h2>
+
+    <div class="canciones" id="vengeance">
+        <button onclick="reproducirCancion(30)">Not Sorry for Loving You</button>
+        <button onclick="reproducirCancion(31)">Dangerous</button>
+        <button onclick="reproducirCancion(32)">Charybdis</button>
+        <button onclick="reproducirCancion(33)">Get in the Water</button>
+        <button onclick="reproducirCancion(34)">Six Hundred Strike</button>
     </div>
+</div>
 
-    <!-- THE ITHACA SAGA -->
-    <div class="saga" style="--color-saga:#66834b; --color-fondo-saga:#1c2918;">
-        <img src="https://akamai.sscdn.co/letras/360x360/albuns/2/3/e/c/2485801735210214.jpg"
-             alt="The Ithaca Saga" onclick="mostrarCanciones('ithaca')">
-        <h2>9. The Ithaca Saga</h2>
-        <div id="ithaca" class="canciones">
-            <button onclick="reproducirCancion(35)">The Challenge</button>
-            <button onclick="reproducirCancion(36)">Hold Them Down</button>
-            <button onclick="reproducirCancion(37)">Odysseus</button>
-            <button onclick="reproducirCancion(38)">I Can't Help but Wonder</button>
-            <button onclick="reproducirCancion(39)">Would You Fall in Love with Me Again</button>
-        </div>
+<!-- THE ITHACA SAGA -->
+<div class="saga" id="saga-ithaca" style="--color-saga:#951c1c; --color-fondo-saga:#1c2918;">
+    <img
+        alt="The Ithaca Saga"
+        decoding="async"
+        loading="lazy"
+        onclick="mostrarCanciones('ithaca')"
+        src="https://akamai.sscdn.co/letras/360x360/albuns/2/3/e/c/2485801735210214.jpg"
+    />
+    <h2>9. The Ithaca Saga</h2>
+
+    <div class="canciones" id="ithaca">
+        <button onclick="reproducirCancion(35)">The Challenge</button>
+        <button onclick="reproducirCancion(36)">Hold Them Down</button>
+        <button onclick="reproducirCancion(37)">Odysseus</button>
+        <button onclick="reproducirCancion(38)">I Can't Help but Wonder</button>
+        <button onclick="reproducirCancion(39)">Would You Fall in Love with Me Again</button>
     </div>
-
+</div>
 </section>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
 <section class="reproductor">
     <h2>EPIC: The Musical Player</h2>
     <div id="youtubePlayer"></div>
 </section>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
 <div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
- <center><h1 style="color: aliceblue;">Mapa del recorrido de Odiseo</h1></center> 
+    <div class="encabezado-acto" id="recorrido">
+        <center>
+            <h1 style="color: aliceblue;">Mapa del recorrido de Odiseo</h1>
+        </center>
+    </div>
 </div>
-<img src="https://i.pinimg.com/736x/f9/c9/6e/f9c96e36b03833c365766948baf861b3.jpg" alt="Mapa del viaje de Odiseo" width="700" height="600">
-<p></p>
-<p></p>
-<p></p>
-<div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
- <center><h1 style="color: aliceblue;">Personajes Destacados</h1></center> 
+
+<p class="introduccion-viaje">
+    El viaje de Odiseo fue verdaderamente una odisea: un recorrido largo
+    lleno de obstáculos, dificultades y desafíos que debía superar para
+    regresar a su hogar, Ítaca. En EPIC: The Musical, esta aventura comienza
+    después de la guerra de Troya y continúa a través de diferentes islas
+    y territorios, donde Odiseo y su tripulación se enfrentan a criaturas,
+    dioses y situaciones que ponen a prueba su supervivencia.
+</p>
+
+<div class="mapa-contenedor">
+    <img
+        alt="Mapa ilustrado del viaje de Odiseo con Troya, los lotófagos, Polifemo, Eolo, los lestrigones, Circe, el inframundo, las sirenas, Escila, la isla del Sol, Caribdis, Calipso, Poseidón e Ítaca"
+        decoding="async"
+        loading="lazy"
+        src="https://i.pinimg.com/736x/f9/c9/6e/f9c96e36b03833c365766948baf861b3.jpg"
+    />
+    <button class="punto-mapa punto-troya" data-etapa="troya" type="button" aria-label="Troya" title="Troya" onclick="mostrarLugar(0)">1</button>
+    <button class="punto-mapa punto-lotofagos" data-etapa="lotofagos" type="button" aria-label="Isla de los Lotófagos" title="Isla de los Lotófagos" onclick="mostrarLugar(1)">2</button>
+    <button class="punto-mapa punto-ciclopes" data-etapa="polifemo" type="button" aria-label="Cueva de Polifemo" title="Cueva de Polifemo" onclick="mostrarLugar(2)">3</button>
+    <button class="punto-mapa punto-eolo" data-etapa="eolo" type="button" aria-label="Isla de Eolo" title="Isla de Eolo" onclick="mostrarLugar(3)">4</button>
+    <button class="punto-mapa punto-lestrigones" data-etapa="lestrigones" type="button" aria-label="Tierra de los Lestrigones" title="Tierra de los Lestrigones" onclick="mostrarLugar(4)">5</button>
+    <button class="punto-mapa punto-circe" data-etapa="circe" type="button" aria-label="Isla de Circe" title="Isla de Circe" onclick="mostrarLugar(5)">6</button>
+    <button class="punto-mapa punto-inframundo" data-etapa="inframundo" type="button" aria-label="El inframundo" title="El inframundo" onclick="mostrarLugar(6)">7</button>
+    <button class="punto-mapa punto-sirenas" data-etapa="sirenas" type="button" aria-label="Trampa de las Sirenas" title="Trampa de las Sirenas" onclick="mostrarLugar(7)">8</button>
+    <button class="punto-mapa punto-escila" data-etapa="escila" type="button" aria-label="Escila" title="Escila" onclick="mostrarLugar(8)">9</button>
+    <button class="punto-mapa punto-helios" data-etapa="helios" type="button" aria-label="Hogar del dios Sol" title="Hogar del dios Sol" onclick="mostrarLugar(9)">10</button>
+    <button class="punto-mapa punto-caribdis" data-etapa="caribdis" type="button" aria-label="Dominio de Caribdis" title="Dominio de Caribdis" onclick="mostrarLugar(11)">12</button>
+    <button class="punto-mapa punto-calipso" data-etapa="calipso" type="button" aria-label="Isla de Calipso" title="Isla de Calipso" onclick="mostrarLugar(10)">11</button>
+    <button class="punto-mapa punto-poseidon" data-etapa="poseidon" type="button" aria-label="Venganza de Poseidón" title="Venganza de Poseidón" onclick="mostrarLugar(12)">13</button>
+    <button class="punto-mapa punto-itaca" data-etapa="itaca" type="button" aria-label="Ítaca" title="Ítaca" onclick="mostrarLugar(13)">14</button>
+</div>
+
+<div class="recorrido-odiseo">
+    <h2>Etapas del viaje</h2>
+    <p>Selecciona cada etapa para conocer los acontecimientos de la aventura.</p>
+
+    <div class="botones-recorrido">
+        <button data-etapa="troya" onclick="mostrarEtapa('troya')"><span class="numero-etapa">1</span><span>Troya</span></button>
+        <button data-etapa="lotofagos" onclick="mostrarEtapa('lotofagos')"><span class="numero-etapa">2</span><span>Los lotófagos</span></button>
+        <button data-etapa="polifemo" onclick="mostrarEtapa('polifemo')"><span class="numero-etapa">3</span><span>Polifemo</span></button>
+        <button data-etapa="eolo" onclick="mostrarEtapa('eolo')"><span class="numero-etapa">4</span><span>Eolo y los vientos</span></button>
+        <button data-etapa="lestrigones" onclick="mostrarEtapa('lestrigones')"><span class="numero-etapa">5</span><span>Los lestrigones</span></button>
+        <button data-etapa="circe" onclick="mostrarEtapa('circe')"><span class="numero-etapa">6</span><span>Circe</span></button>
+        <button data-etapa="inframundo" onclick="mostrarEtapa('inframundo')"><span class="numero-etapa">7</span><span>El inframundo</span></button>
+        <button data-etapa="sirenas" onclick="mostrarEtapa('sirenas')"><span class="numero-etapa">8</span><span>Las sirenas</span></button>
+        <button data-etapa="escila" onclick="mostrarEtapa('escila')"><span class="numero-etapa">9</span><span>Escila</span></button>
+        <button data-etapa="helios" onclick="mostrarEtapa('helios')"><span class="numero-etapa">10</span><span>La isla del Sol</span></button>
+        <button data-etapa="calipso" onclick="mostrarEtapa('calipso')"><span class="numero-etapa">11</span><span>Calipso</span></button>
+        <button data-etapa="godgames" onclick="mostrarEtapa('godgames')"><span class="numero-etapa">•</span><span>God Games (evento en el Olimpo)</span></button>
+        <button data-etapa="caribdis" onclick="mostrarEtapa('caribdis')"><span class="numero-etapa">12</span><span>Caribdis</span></button>
+        <button data-etapa="poseidon" onclick="mostrarEtapa('poseidon')"><span class="numero-etapa">13</span><span>La venganza de Poseidón</span></button>
+        <button data-etapa="itaca" onclick="mostrarEtapa('itaca')"><span class="numero-etapa">14</span><span>Ítaca</span></button>
+    </div>
+
+    <div class="panel-recorrido" id="panel-recorrido">
+        <h3 id="titulo-etapa">El viaje de Odiseo</h3>
+        <p id="texto-etapa">
+            Selecciona uno de los botones para descubrir lo que ocurrió
+            durante esta parte del viaje.
+        </p>
+    </div>
+</div>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
+<div id="personajes" style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
+    <center>
+        <h1 style="color: aliceblue;">Personajes Destacados</h1>
+    </center>
 </div>
 <article class="ficha-personaje">
-
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/736x/88/03/c2/8803c250f1fed3181d745d41a6a94e10.jpg" alt="Odiseo">
+        <img
+            alt="Odiseo"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/736x/88/03/c2/8803c250f1fed3181d745d41a6a94e10.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
-
         <div class="ficha-titulo">
             <span>◆</span>
             <h3>ODISEO</h3>
@@ -952,60 +2743,58 @@ img.foto-jorge {
                 y decisiones difíciles que ponen a prueba su
                 inteligencia, liderazgo y humanidad.
             </p>
-<div class="ficha-enlaces">
-    <button onclick="mostrarDetalle('apariencia-odiseo')">
-        Apariencia
-    </button>
 
-    <span>◆</span>
+            <div class="ficha-enlaces">
+                <button onclick="mostrarDetalle('apariencia-odiseo')">Apariencia</button>
+                <span>◆</span>
+                <button onclick="mostrarDetalle('personalidad-odiseo')">Personalidad</button>
+                <span>◆</span>
+                <button onclick="mostrarDetalle('origen-odiseo')">Origen</button>
+            </div>
 
-    <button onclick="mostrarDetalle('personalidad-odiseo')">
-        Personalidad
-    </button>
+            <div class="detalle-panel" id="apariencia-odiseo">
+                <h4>✦ Apariencia</h4>
+                <p>
+                    Odiseo suele representarse como un hombre adulto,
+                    de cabello oscuro, mirada determinada y vestimenta
+                    de guerrero griego.
+                </p>
+            </div>
 
-    <span>◆</span>
+            <div class="detalle-panel" id="personalidad-odiseo">
+                <h4>✦ Personalidad</h4>
+                <p>
+                    Es inteligente, astuto, estratégico y perseverante.
+                    También puede ser orgulloso e impulsivo.
+                </p>
+            </div>
 
-    <button onclick="mostrarDetalle('origen-odiseo')">
-        Origen
-    </button>
-</div>
-
-    <div id="apariencia-odiseo" class="detalle-panel">
-        <h4>✦ Apariencia</h4>
-        <p>
-            Odiseo suele representarse como un hombre adulto,
-            de cabello oscuro, mirada determinada y vestimenta
-            de guerrero griego.
-        </p>
+            <div class="detalle-panel" id="origen-odiseo">
+                <h4>✦ Origen</h4>
+                <p>
+                    Es el rey de Ítaca, hijo de Laertes y Anticlea,
+                    esposo de Penélope y padre de Telémaco.
+                </p>
+            </div>
+        </div>
     </div>
-
-    <div id="personalidad-odiseo" class="detalle-panel">
-        <h4>✦ Personalidad</h4>
-        <p>
-            Es inteligente, astuto, estratégico y perseverante.
-            También puede ser orgulloso e impulsivo.
-        </p>
-    </div>
-
-    <div id="origen-odiseo" class="detalle-panel">
-        <h4>✦ Origen</h4>
-        <p>
-            Es el rey de Ítaca, hijo de Laertes y Anticlea,
-            esposo de Penélope y padre de Telémaco.
-        </p>
-    </div>
-
-</div>
 </article>
-<article class="ficha-personaje">
 
+<article class="ficha-personaje">
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/1200x/83/65/9f/83659fb16d8b71a110bb0a95111d7c83.jpg" alt="Penélope">
+        <img
+            alt="Penélope"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/1200x/83/65/9f/83659fb16d8b71a110bb0a95111d7c83.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>PENÉLOPE</h3><span>◆</span>
+            <span>◆</span>
+            <h3>PENÉLOPE</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">La reina que espera el regreso de su esposo</p>
@@ -1028,6 +2817,7 @@ img.foto-jorge {
                 debe mantener el orden del reino y enfrentarse a
                 los pretendientes que desean casarse con ella.
             </p>
+
             <p>
                 Aunque no participa directamente en las aventuras
                 de Odiseo, es una de las principales motivaciones
@@ -1045,7 +2835,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-penelope" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-penelope">
                 <h4>✦ Apariencia</h4>
                 <p>
                     Suele representarse como una mujer de cabello
@@ -1056,7 +2846,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-penelope" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-penelope">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es paciente, inteligente, fiel y perseverante.
@@ -1067,7 +2857,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-penelope" class="detalle-panel">
+            <div class="detalle-panel" id="origen-penelope">
                 <h4>✦ Origen</h4>
                 <p>
                     Según la tradición mitológica, es hija de
@@ -1081,15 +2871,22 @@ img.foto-jorge {
         </div>
     </div>
 </article>
-<article class="ficha-personaje">
 
+<article class="ficha-personaje">
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/736x/57/0e/e9/570ee9c64e3692e64ccef7a7dbc3357a.jpg" alt="Telémaco">
+        <img
+            alt="Telémaco"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/736x/57/0e/e9/570ee9c64e3692e64ccef7a7dbc3357a.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>TELÉMACO</h3><span>◆</span>
+            <span>◆</span>
+            <h3>TELÉMACO</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">El hijo que busca conocer a su padre</p>
@@ -1112,6 +2909,7 @@ img.foto-jorge {
                 está marcada por la presencia de los
                 pretendientes que desean ocupar el trono.
             </p>
+
             <p>
                 En EPIC: The Musical, su historia representa
                 el crecimiento y la búsqueda de identidad.
@@ -1129,7 +2927,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-telemaco" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-telemaco">
                 <h4>✦ Apariencia</h4>
                 <p>
                     Generalmente se representa como un joven de
@@ -1140,7 +2938,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-telemaco" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-telemaco">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es amable, curioso, sensible y valiente,
@@ -1151,7 +2949,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-telemaco" class="detalle-panel">
+            <div class="detalle-panel" id="origen-telemaco">
                 <h4>✦ Origen</h4>
                 <p>
                     Es hijo de Odiseo y Penélope. Nació en
@@ -1165,14 +2963,20 @@ img.foto-jorge {
     </div>
 </article>
 <article class="ficha-personaje">
-
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/736x/9b/90/28/9b9028b4add1f715241a516b5435913e.jpg" alt="Atenea">
+        <img
+            alt="Atenea"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/736x/9b/90/28/9b9028b4add1f715241a516b5435913e.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>ATENEA</h3><span>◆</span>
+            <span>◆</span>
+            <h3>ATENEA</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">La diosa de la sabiduría y la estrategia</p>
@@ -1195,6 +2999,7 @@ img.foto-jorge {
                 las capacidades de Odiseo y se interesa por
                 su manera de resolver los problemas.
             </p>
+
             <p>
                 Su relación con el protagonista atraviesa
                 momentos de cercanía, desacuerdo y reconciliación.
@@ -1213,7 +3018,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-atenea" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-atenea">
                 <h4>✦ Apariencia</h4>
                 <p>
                     En las representaciones mitológicas suele
@@ -1224,7 +3029,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-atenea" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-atenea">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es inteligente, estratégica, orgullosa
@@ -1235,7 +3040,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-atenea" class="detalle-panel">
+            <div class="detalle-panel" id="origen-atenea">
                 <h4>✦ Origen</h4>
                 <p>
                     Es hija de Zeus y, según el mito más conocido,
@@ -1248,15 +3053,22 @@ img.foto-jorge {
         </div>
     </div>
 </article>
-<article class="ficha-personaje">
 
+<article class="ficha-personaje">
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/736x/06/43/c5/0643c5fcd4958d7ba791bba0cd99bf8e.jpg" alt="Poseidón">
+        <img
+            alt="Poseidón"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/736x/06/43/c5/0643c5fcd4958d7ba791bba0cd99bf8e.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>POSEIDÓN</h3><span>◆</span>
+            <span>◆</span>
+            <h3>POSEIDÓN</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">El poderoso señor de los mares</p>
@@ -1279,6 +3091,7 @@ img.foto-jorge {
                 En EPIC: The Musical es uno de los principales
                 antagonistas de Odiseo.
             </p>
+
             <p>
                 Su enemistad con el protagonista comienza
                 después del encuentro de Odiseo con Polifemo,
@@ -1298,7 +3111,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-poseidon" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-poseidon">
                 <h4>✦ Apariencia</h4>
                 <p>
                     Se representa como un hombre adulto de
@@ -1309,7 +3122,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-poseidon" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-poseidon">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es poderoso, autoritario, orgulloso y
@@ -1320,7 +3133,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-poseidon" class="detalle-panel">
+            <div class="detalle-panel" id="origen-poseidon">
                 <h4>✦ Origen</h4>
                 <p>
                     Es hijo de Cronos y Rea, hermano de Zeus
@@ -1333,15 +3146,22 @@ img.foto-jorge {
         </div>
     </div>
 </article>
-<article class="ficha-personaje">
 
+<article class="ficha-personaje">
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/736x/30/a3/47/30a347c5aa89b3c6963eec73c1a940e3.jpg" alt="Circe">
+        <img
+            alt="Circe"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/736x/30/a3/47/30a347c5aa89b3c6963eec73c1a940e3.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>CIRCE</h3><span>◆</span>
+            <span>◆</span>
+            <h3>CIRCE</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">La poderosa hechicera de Eea</p>
@@ -1364,6 +3184,7 @@ img.foto-jorge {
                 En EPIC: The Musical se encuentra con Odiseo
                 y sus compañeros durante su viaje.
             </p>
+
             <p>
                 Su encuentro con el protagonista representa
                 un enfrentamiento de inteligencia y voluntad.
@@ -1384,7 +3205,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-circe" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-circe">
                 <h4>✦ Apariencia</h4>
                 <p>
                     Suele representarse como una mujer de
@@ -1395,7 +3216,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-circe" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-circe">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es inteligente, cautelosa, independiente
@@ -1406,7 +3227,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-circe" class="detalle-panel">
+            <div class="detalle-panel" id="origen-circe">
                 <h4>✦ Origen</h4>
                 <p>
                     Según la tradición mitológica más conocida,
@@ -1420,14 +3241,20 @@ img.foto-jorge {
     </div>
 </article>
 <article class="ficha-personaje">
-
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/736x/67/f7/2c/67f72c900fddbbfaf875b1220ce42c6e.jpg" alt="Euríloco">
+        <img
+            alt="Euríloco"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/736x/67/f7/2c/67f72c900fddbbfaf875b1220ce42c6e.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>EURÍLOCO</h3><span>◆</span>
+            <span>◆</span>
+            <h3>EURÍLOCO</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">El compañero que cuestiona las decisiones</p>
@@ -1450,6 +3277,7 @@ img.foto-jorge {
                 y cuestiona las decisiones que considera
                 demasiado arriesgadas.
             </p>
+
             <p>
                 Sus diferencias con Odiseo aumentan a medida
                 que la tripulación enfrenta pérdidas y peligros.
@@ -1469,7 +3297,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-euriloco" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-euriloco">
                 <h4>✦ Apariencia</h4>
                 <p>
                     En las representaciones artísticas suele
@@ -1481,7 +3309,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-euriloco" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-euriloco">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es prudente, desconfiado, preocupado y
@@ -1492,7 +3320,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-euriloco" class="detalle-panel">
+            <div class="detalle-panel" id="origen-euriloco">
                 <h4>✦ Origen</h4>
                 <p>
                     Es uno de los hombres que acompañan a
@@ -1505,15 +3333,22 @@ img.foto-jorge {
         </div>
     </div>
 </article>
-<article class="ficha-personaje">
 
+<article class="ficha-personaje">
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/736x/04/ac/2c/04ac2cf872eb304925b4faea818e3c2b.jpg" alt="Polites">
+        <img
+            alt="Polites"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/736x/04/ac/2c/04ac2cf872eb304925b4faea818e3c2b.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>POLITES</h3><span>◆</span>
+            <span>◆</span>
+            <h3>POLITES</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">El guerrero que cree en los brazos abiertos</p>
@@ -1536,6 +3371,7 @@ img.foto-jorge {
                 considera que no todas las situaciones deben
                 resolverse mediante la violencia o la desconfianza.
             </p>
+
             <p>
                 Su filosofía de recibir a los demás con los
                 brazos abiertos representa una perspectiva
@@ -1555,7 +3391,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-polites" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-polites">
                 <h4>✦ Apariencia</h4>
                 <p>
                     Suele representarse como un joven guerrero
@@ -1566,7 +3402,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-polites" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-polites">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es alegre, optimista, amable y pacífico.
@@ -1577,7 +3413,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-polites" class="detalle-panel">
+            <div class="detalle-panel" id="origen-polites">
                 <h4>✦ Origen</h4>
                 <p>
                     Es uno de los compañeros de Odiseo durante
@@ -1590,15 +3426,22 @@ img.foto-jorge {
         </div>
     </div>
 </article>
-<article class="ficha-personaje">
 
+<article class="ficha-personaje">
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/736x/56/ec/6e/56ec6e6869f900c5b475e17098f43a5a.jpg" alt="Hermes">
+        <img
+            alt="Hermes"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/736x/56/ec/6e/56ec6e6869f900c5b475e17098f43a5a.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>HERMES</h3><span>◆</span>
+            <span>◆</span>
+            <h3>HERMES</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">El veloz mensajero del Olimpo</p>
@@ -1621,6 +3464,7 @@ img.foto-jorge {
                 de desplazarse entre el mundo de los dioses
                 y el de los mortales.
             </p>
+
             <p>
                 En EPIC: The Musical aparece durante el viaje
                 de Odiseo y le proporciona una ayuda importante
@@ -1640,7 +3484,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-hermes" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-hermes">
                 <h4>✦ Apariencia</h4>
                 <p>
                     Suele representarse como un joven de aspecto
@@ -1651,7 +3495,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-hermes" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-hermes">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es ingenioso, astuto, divertido y despreocupado.
@@ -1662,7 +3506,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-hermes" class="detalle-panel">
+            <div class="detalle-panel" id="origen-hermes">
                 <h4>✦ Origen</h4>
                 <p>
                     Es hijo de Zeus y Maya. Según la mitología,
@@ -1675,14 +3519,20 @@ img.foto-jorge {
     </div>
 </article>
 <article class="ficha-personaje">
-
     <div class="ficha-imagen">
-        <img src="https://i.pinimg.com/1200x/73/e6/10/73e610ad104ef9f697dd61b7888dd6fc.jpg" alt="Zeus">
+        <img
+            alt="Zeus"
+            decoding="async"
+            loading="lazy"
+            src="https://i.pinimg.com/1200x/73/e6/10/73e610ad104ef9f697dd61b7888dd6fc.jpg"
+        />
     </div>
 
     <div class="ficha-contenido">
         <div class="ficha-titulo">
-            <span>◆</span><h3>ZEUS</h3><span>◆</span>
+            <span>◆</span>
+            <h3>ZEUS</h3>
+            <span>◆</span>
         </div>
 
         <p class="subtitulo-ficha">El soberano de los dioses del Olimpo</p>
@@ -1705,6 +3555,7 @@ img.foto-jorge {
                 divinidades. Sus decisiones pueden influir
                 directamente en el destino de los mortales.
             </p>
+
             <p>
                 En EPIC: The Musical aparece como una figura
                 autoritaria que exige respeto por las leyes
@@ -1724,7 +3575,7 @@ img.foto-jorge {
         </div>
 
         <div class="detalles-personaje">
-            <div id="apariencia-zeus" class="detalle-panel">
+            <div class="detalle-panel" id="apariencia-zeus">
                 <h4>✦ Apariencia</h4>
                 <p>
                     Se representa como un hombre adulto de
@@ -1735,7 +3586,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="personalidad-zeus" class="detalle-panel">
+            <div class="detalle-panel" id="personalidad-zeus">
                 <h4>✦ Personalidad</h4>
                 <p>
                     Es autoritario, poderoso, orgulloso y
@@ -1745,7 +3596,7 @@ img.foto-jorge {
                 </p>
             </div>
 
-            <div id="origen-zeus" class="detalle-panel">
+            <div class="detalle-panel" id="origen-zeus">
                 <h4>✦ Origen</h4>
                 <p>
                     Es hijo de Cronos y Rea. Después de
@@ -1758,101 +3609,468 @@ img.foto-jorge {
         </div>
     </div>
 </article>
+
 <div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;">
- <center><h1 style="color: aliceblue;">Los obstáculos de Odiseo</h1></center> 
+    <center>
+        <h1 style="color: aliceblue;">Los obstáculos de Odiseo</h1>
+    </center>
 </div>
-<div class="personaje">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAG59YDZTa6pH0hOZ4AKVmCefK-G-bSSJ0SqiZkQAvxN9Jr05Fw_bwG_b&s=10" alt="Polifemo">
-    <div class="descripcion-personaje">
+
+<div class="enemigo">
+    <img
+        alt="Polifemo"
+        decoding="async"
+        loading="lazy"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAG59YDZTa6pH0hOZ4AKVmCefK-G-bSSJ0SqiZkQAvxN9Jr05Fw_bwG_b&amp;s=10"
+    />
+
+    <div class="descripcion-enemigo">
         <h3>1. Polifemo</h3>
-        <p></p>
+
+        <p>
+            En la mitología griega:
+            Polifemo es un cíclope, una criatura gigante de un solo ojo, hijo del dios Poseidón y de la ninfa Toosa. En La Odisea, vive en una cueva y
+            se encuentra con Odiseo y sus compañeros cuando estos llegan a su isla. Al quedar atrapados, Odiseo utiliza su inteligencia para engañarlo y conseguir escapar.
+            Esto provoca que Polifemo pida ayuda a su padre, Poseidón, quien comienza a perseguir a Odiseo y dificulta su regreso a Ítaca.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Polifemo aparece en la saga The Cyclops Saga, especialmente en la canción "Survive". Es representado como un cíclope peligroso y violento que se enfrenta a Odiseo y su tripulación después
+            de descubrir que han entrado en su cueva y atacado a sus ovejas. Odiseo intenta negociar con él, pero el conflicto
+            termina convirtiéndose en una lucha por sobrevivir. Finalmente, Odiseo consigue escapar mediante un engaño.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-polifemo')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-polifemo">
+            <p>
+                Polifemo es uno de los personajes que desencadena
+                el conflicto entre Odiseo y Poseidón, convirtiéndose
+                en una figura fundamental de su travesía.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://i.pinimg.com/736x/83/3e/b0/833eb0dc2f5f4f26b53c5c31fb4b505e.jpg" alt="Eolo">
-    <div class="descripcion-personaje">
+
+<div class="enemigo">
+    <img
+        alt="Eolo"
+        decoding="async"
+        loading="lazy"
+        src="https://i.pinimg.com/736x/83/3e/b0/833eb0dc2f5f4f26b53c5c31fb4b505e.jpg"
+    />
+
+    <div class="descripcion-enemigo">
         <h3>2. Eolo</h3>
-        <p></p>
+
+        <p>
+            En la mitología griega:
+            Eolo es conocido como el señor o guardián de los vientos. Según la tradición mitológica, tenía el poder de controlar y liberar los vientos, por lo que podía influir en las travesías marítimas.
+            En La Odisea, ayuda a Odiseo durante su regreso a Ítaca, entregándole una bolsa que contenía los vientos desfavorables.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Eolo aparece en la saga The Ocean Saga, donde ayuda a Odiseo entregándole una bolsa que contiene los vientos.
+            Sin embargo, sus compañeros, al creer que dentro hay un tesoro, terminan abriéndola y liberando los vientos, provocando que la tripulación se aleje de Ítaca.
+            Su participación es fundamental para mostrar cómo la desconfianza y la curiosidad pueden perjudicar el viaje de Odiseo.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-eolo')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-eolo">
+            <p>
+                Eolo entregó a Odiseo una bolsa con los vientos
+                desfavorables, pero la tripulación de Odiseo no obedecieron
+                ordenes de no abrir la bolsa, y muertos por la curiosidad deciden abrirla
+                justo cuando estaban cerca de Ítaca.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThs2M7jqD36EM6ps9Q0kmCH1NnG3_HKBr-bEYvP9mmj8zGkYW0rsOl1yi&s=10" alt="Poseidon">
-    <div class="descripcion-personaje">
+
+<div class="enemigo">
+    <img
+        alt="Poseidon"
+        decoding="async"
+        loading="lazy"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThs2M7jqD36EM6ps9Q0kmCH1NnG3_HKBr-bEYvP9mmj8zGkYW0rsOl1yi&amp;s=10"
+    />
+
+    <div class="descripcion-enemigo">
         <h3>3. Poseidon</h3>
-        <p></p>
+
+        <p>
+            En la mitología griega:
+            Poseidón es uno de los principales dioses del Olimpo y hermano de Zeus y Hades. Es conocido como el dios del mar, los terremotos y los caballos.
+            Su símbolo más representativo es el tridente, con el que podía controlar las aguas y provocar grandes tormentas y
+            en La Odisea, siente un profundo resentimiento hacia Odiseo después de que este deja ciego a su hijo Polifemo.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Poseidón aparece principalmente en la saga The Ocean Saga, especialmente en la canción "Ruthlessness". Es presentado como un dios
+            poderoso, intimidante y despiadado que busca castigar a Odiseo por lo ocurrido con Polifemo. Durante su encuentro, le exige que comprenda
+            que la crueldad es necesaria para sobrevivir y utiliza sus poderes sobre el mar para destruir gran parte de la flota de Odiseo.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-Poseidon')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-Poseidon">
+            <p>
+                En EPIC, Poseidón representa una de las mayores amenazas
+                para el regreso de Odiseo. Su canción "Ruthlessness" expresa su
+                filosofía de que la compasión puede convertirse en una debilidad.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://preview.redd.it/do-you-think-circe-and-athena-are-working-to-make-a-kinder-v0-olkf95vks2ae1.jpeg?auto=webp&s=1999d0849628f6fdfcb66aab0ed66c4920b1cb41" alt="Circe2">
-    <div class="descripcion-personaje">
+
+<div class="enemigo">
+    <img
+        alt="Circe2"
+        decoding="async"
+        loading="lazy"
+        src="https://preview.redd.it/do-you-think-circe-and-athena-are-working-to-make-a-kinder-v0-olkf95vks2ae1.jpeg?auto=webp&amp;s=1999d0849628f6fdfcb66aab0ed66c4920b1cb41"
+    />
+
+    <div class="descripcion-enemigo">
         <h3>4. La isla de Circe</h3>
-        <p></p>
+
+        <p>
+            En la mitología griega:
+            Circe es una poderosa hechicera, hija del dios Helios y de la ninfa Perseis. Vivía en la isla de Eea, un lugar misterioso
+            donde utilizaba su magia y pociones para transformar a quienes llegaban a su territorio. En La Odisea, convierte en cerdos a varios compañeros de Odiseo cuando estos visitan su palacio.
+            Sin embargo, gracias a la ayuda del dios Hermes, Odiseo consigue resistir su magia y enfrentarse a ella.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Circe aparece en la saga The Circe Saga, cuyo escenario principal es la isla de Eea. Allí recibe a Odiseo y a
+            su tripulación, pero transforma a sus compañeros en cerdos para protegerse de ellos. Odiseo llega a confrontarla y ambos tienen un enfrentamiento en el que él demuestra que no es fácil de engañar.
+            Finalmente, Circe decide ayudarlo y le proporciona información para continuar su viaje hacia Ítaca.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-Circe')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-Circe">
+            <p>
+                La isla de Eea es el lugar donde Odiseo conoce a Circe,
+                quien posteriormente le indica cómo llegar al inframundo.
+                Así, una de sus enemigas iniciales termina convirtiéndose en una aliada.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://cdna.artstation.com/p/assets/images/images/085/913/892/large/lian-villegas-the-prophet-epic-the-concept-musical-4.jpg?1741930352" alt="Inframundo ">
-    <div class="descripcion-personaje">
-        <h3>5. El inframundo</h3>
-        <p></p>
+<div class="enemigo">
+    <img
+        alt="Inframundo"
+        decoding="async"
+        loading="lazy"
+        src="https://cdna.artstation.com/p/assets/images/images/085/913/892/large/lian-villegas-the-prophet-epic-the-concept-musical-4.jpg?1741930352"
+    />
+
+    <div class="descripcion-enemigo">
+        <h3>5. El inframundo y Tiresias el profeta</h3>
+
+        <p>
+            En la mitología griega:
+            El inframundo era el reino de los muertos, gobernado por Hades. Era un lugar al que llegaban las almas después de morir y estaba dividido
+            en distintas regiones. En La Odisea, Odiseo viaja hasta allí para consultar a Tiresias,
+            un famoso profeta ciego que tenía el don de conocer el pasado y predecir el futuro. Su propósito era descubrir cómo regresar a Ítaca.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            El inframundo aparece en la saga The Underworld Saga. Odiseo llega a este lugar siguiendo las indicaciones de Circe, con el objetivo de encontrar al profeta Tiresias.
+            Durante su encuentro, Tiresias le revela visiones sobre su futuro y le muestra las consecuencias de sus decisiones, incluyendo
+            la posibilidad de regresar a casa y aquello que podría encontrar al llegar.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-Tiresias')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-Tiresias">
+            <p>
+                Tiresias es uno de los pocos personajes de la mitología griega que aparece en varias
+                historias incluso después de su muerte. Su sabiduría y capacidad profética lo
+                convierten en una figura muy importante dentro de La Odisea y EPIC.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://i.redd.it/sr6p3wjdmnmg1.jpeg" alt="Sirenas">
-    <div class="descripcion-personaje">
+
+<div class="enemigo">
+    <img
+        alt="Sirenas"
+        decoding="async"
+        loading="lazy"
+        src="https://i.redd.it/sr6p3wjdmnmg1.jpeg"
+    />
+
+    <div class="descripcion-enemigo">
         <h3>6. Las sirenas</h3>
-        <p></p>
+
+        <p>
+            En la mitología griega:
+            Las sirenas eran criaturas mitológicas conocidas por su hermoso y misterioso canto, capaz de atraer a los navegantes y hacer que sus barcos se acercaran peligrosamente a ellas.
+            En las representaciones antiguas aparecían como seres con cuerpo de ave y rostro de mujer, aunque posteriormente se popularizaron con apariencia de mujeres con cola de pez.
+            En La Odisea, Odiseo debe atravesar el lugar donde habitan estas criaturas sin caer en su encantadora melodía.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Las sirenas aparecen en la saga The Thunder Saga, especialmente en la canción "Suffering". Intentan atraer a Odiseo utilizando sus voces y haciéndole creer que
+            Penélope lo está esperando. Sin embargo, Odiseo descubre su engaño y prepara un plan para enfrentarlas, utilizando la información que obtiene de una de ellas
+            para evitar que su tripulación caiga en la trampa.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-Sirenas')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-Sirenas">
+            <p>
+                En EPIC, las sirenas utilizan la apariencia y la voz de personas importantes para sus víctimas.
+                En el caso de Odiseo, aprovechan su amor por Penélope para intentar engañarlo.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5eAnuOYXOjtXOdBAj8hAamkvPDIgum9k0q-TX7HBnwDv-nt0sg1XC1uu&s=10" alt="Scylla">
-    <div class="descripcion-personaje">
+
+<div class="enemigo">
+    <img
+        alt="Scylla"
+        decoding="async"
+        loading="lazy"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5eAnuOYXOjtXOdBAj8hAamkvPDIgum9k0q-TX7HBnwDv-nt0sg1XC1uu&amp;s=10"
+    />
+
+    <div class="descripcion-enemigo">
         <h3>7. Escila/Scylla</h3>
-        <p></p>
+
+        <p>
+            En la mitología griega:
+            Escila es un monstruo marino de la mitología griega que habitaba en un estrecho rocoso, frente a Caribdis. Era representada como una criatura aterradora con varias cabezas y un cuerpo monstruoso.
+            En La Odisea, Odiseo debe atravesar el peligroso estrecho donde viven ambos monstruos. Escila captura a varios de sus compañeros, convirtiéndose en uno de los obstáculos más difíciles de su viaje.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Escila aparece en la saga The Thunder Saga, especialmente en la canción "Scylla". Odiseo y su tripulación deben atravesar el territorio de este monstruo marino para continuar su viaje.
+            Sin embargo, Escila ataca desde la oscuridad y captura a seis integrantes de la tripulación.
+            Este acontecimiento muestra una de las decisiones más difíciles de Odiseo y las consecuencias de sus intentos por sobrevivir.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-Scylla')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-Scylla">
+            <p>
+                En la mitología, Escila y Caribdis representaban dos peligros opuestos: mientras Escila atacaba desde las rocas,
+                Caribdis provocaba enormes remolinos en el mar. Por eso, atravesar ese estrecho significaba enfrentarse a un peligro inevitable.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://i.pinimg.com/736x/76/20/91/7620919436e4734ddf87cc7c5827eeb8.jpg" alt="Helios Dios del Sol">
-    <div class="descripcion-personaje">
+
+<div class="enemigo">
+    <img
+        alt="Helios Dios del Sol"
+        decoding="async"
+        loading="lazy"
+        src="https://i.pinimg.com/736x/76/20/91/7620919436e4734ddf87cc7c5827eeb8.jpg"
+    />
+
+    <div class="descripcion-enemigo">
         <h3>8. La isla del Sol y Zeus</h3>
-        <p></p>
+
+        <p>
+            En la mitología griega:
+            Zeus es el rey de los dioses del Olimpo, hijo de Cronos y Rea, y hermano de Poseidón y Hades.
+            Es conocido como el dios del cielo, el trueno y los rayos, y utiliza su poder para mantener el orden entre los dioses y los mortales.
+            En La Odisea, Odiseo y sus compañeros llegan a la isla de Trinacia, donde se encuentran los rebaños sagrados de Helios, el dios del Sol.
+            Aunque reciben la advertencia de no tocar los animales,
+            sus compañeros terminan sacrificándolos, provocando la ira de los dioses.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Zeus aparece en la saga The Thunder Saga, especialmente en la canción "Thunder Bringer". Después de que la tripulación mata al ganado sagrado de Helios, Zeus interviene para castigar a Odiseo.
+            Le presenta una decisión terrible: salvarse a sí mismo o sacrificarse para intentar salvar a sus hombres. Finalmente, Odiseo elige sobrevivir, dejando que Zeus castigue a su tripulación.
+            La isla del Sol, conocida como Trinacia, es el escenario donde ocurre este acontecimiento y representa uno de los momentos más decisivos de su travesía.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-Thunder')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-Thunder">
+            <p>
+                Los animales de la isla pertenecían a Helios, no a Zeus. Sin embargo, fue Zeus
+                quien ejecutó el castigo contra la tripulación por haber desobedecido la advertencia divina.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://cdna.artstation.com/p/assets/images/images/086/967/980/large/sitigs_art-calypso-signed.jpg?1764668062" alt="Calipso">
-    <div class="descripcion-personaje">
-        <h3>9. Calipso</h3>
-        <p></p>
+
+<div class="enemigo">
+    <img
+        alt="Calipso"
+        decoding="async"
+        loading="lazy"
+        src="https://cdna.artstation.com/p/assets/images/images/086/967/980/large/sitigs_art-calypso-signed.jpg?1764668062"
+    />
+
+    <div class="descripcion-enemigo">
+        <h3>9. Calipso, la ninfa de la isla Ogigia</h3>
+
+        <p>
+            En la mitología griega:
+            Calipso es una ninfa de gran belleza, hija del titán Atlas según algunas tradiciones. Vivía en la isla de Ogigia, un lugar remoto y paradisíaco.
+            En La Odisea, recibe a Odiseo después de que este pierde a sus compañeros y su barco. Se enamora de él y lo mantiene en su isla durante varios años,
+            ofreciéndole incluso la inmortalidad si decide quedarse a su lado. Sin embargo, Odiseo desea regresar a Ítaca y reencontrarse con Penélope.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Calipso aparece en la saga The Wisdom Saga, especialmente en la canción "Love in Paradise". En esta parte, Odiseo llega a la isla de Ogigia,
+            donde Calipso lo recibe y expresa su deseo de que permanezca junto a ella.
+            Aunque intenta convencerlo de quedarse, Odiseo continúa pensando en su hogar y en Penélope. Finalmente, los dioses intervienen y permiten que abandone la isla.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-Calipso')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-Calipso">
+            <p>
+                En la mitología, Calipso ofrece a Odiseo la posibilidad de vivir eternamente a su lado,
+                pero él rechaza esa oportunidad porque prefiere recuperar su vida como mortal junto a su familia.
+            </p>
+        </div>
     </div>
 </div>
-<div class="personaje">
-    <img src="https://preview.redd.it/ima-do-this-then-im-charybdis-literally-ama-v0-5nnugpfz44ee1.jpg?width=188&format=pjpg&auto=webp&s=af69965141cc97ed60deaa8097d26ad180c52685" alt="Caribdis">
-    <div class="descripcion-personaje">
-        <h3>10. Caribdis</h3>
-        <p></p>
+
+<div class="enemigo">
+    <img
+        alt="Caribdis"
+        decoding="async"
+        loading="lazy"
+        src="https://preview.redd.it/ima-do-this-then-im-charybdis-literally-ama-v0-5nnugpfz44ee1.jpg?width=188&amp;format=pjpg&amp;auto=webp&amp;s=af69965141cc97ed60deaa8097d26ad180c52685"
+    />
+
+    <div class="descripcion-enemigo">
+        <h3>10. Caribdis, el mounstro de los remolinos</h3>
+
+        <p>
+            En la mitología griega:
+            Caribdis es una criatura marina monstruosa que, según la mitología, fue castigada por Zeus y transformada en un peligroso remolino.
+            Habitaba en un estrecho frente a Escila y tenía la capacidad de absorber enormes cantidades de agua para después expulsarlas, formando gigantescos torbellinos.
+            En La Odisea, Odiseo debe atravesar esta zona, enfrentándose al peligro de ser tragado por sus aguas.
+        </p>
+
+        <p>
+            En EPIC: The Musical:
+            Caribdis aparece en la saga The Vengeance Saga, especialmente en la canción "Charybdis". Odiseo debe enfrentarse a este enorme remolino durante su viaje por el mar.
+            A diferencia de otros enemigos, Caribdis no habla ni negocia: representa una amenaza natural que Odiseo debe superar utilizando su inteligencia y habilidades para continuar su camino.
+        </p>
+
+        <button class="boton-curiosidad" onclick="mostrarInfo('curiosidad-Caribdis')">
+            Dato curioso ▼
+        </button>
+
+        <div class="contenido-curiosidad" id="curiosidad-Caribdis">
+            <p>
+                En algunas versiones de la mitología griega, Caribdis fue originalmente una mujer que recibió
+                un castigo de Zeus por su voracidad y terminó convertida en un monstruoso remolino marino.
+            </p>
+        </div>
     </div>
 </div>
-<section class="contenido">
-    <div class="imagen">   
-        <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/7/e/a/b/7eab493038e2f2329fadcc9320421d5d.jpg" alt="Jorge Rivera-Herrans" class="foto-jorge">
-        <section class="redes">
-    <h2>REDES SOCIALES</h2>
-    <a href="https://www.instagram.com/jayherrans/" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@jorgeherrans" target="_blank">TikTok</a>
-    <a href="https://www.youtube.com/channel/UCvayv7u6HrpENlleXekJ2fg" target="_blank">YouTube</a>
-    <a href="https://twitter.com/JayHerrans" target="_blank">X (Twitter)</a>
-    <a href="https://www.jorgeriveraherrans.com/" target="_blank">Página oficial</a>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
+<section id="trivia" aria-labelledby="titulo-trivia">
+    <h1 id="titulo-trivia">¿Cuánto sabes de EPIC?</h1>
+    <p>Demuestra tus conocimientos sobre el musical y la mitología griega.</p>
+
+    <div class="trivia-caja">
+        <h2 id="pregunta-trivia" aria-live="polite"></h2>
+        <div id="opciones-trivia"></div>
+        <p id="resultado-trivia" aria-live="polite"></p>
+        <button id="siguiente-trivia" type="button" onclick="siguientePregunta()" disabled>
+            Siguiente pregunta
+        </button>
+        <h3 id="puntuacion-trivia" aria-live="polite"></h3>
+    </div>
 </section>
+
+<div class="separador-griego" aria-hidden="true"><span>✦</span></div>
+
+<div id="jorge" style="background-color: #222325; min-height: 120px; padding: 10px; color: white;">
+    <h2>Creador de Epic:The Musical</h2>
+</div>
+
+<section class="contenido">
+    <div class="imagen">
+        <img
+            alt="Jorge Rivera-Herrans"
+            class="foto-jorge"
+            decoding="async"
+            loading="lazy"
+            src="https://akamai.sscdn.co/uploadfile/letras/fotos/7/e/a/b/7eab493038e2f2329fadcc9320421d5d.jpg"
+        />
+
+        <section class="redes">
+            <h2>REDES SOCIALES</h2>
+
+            <a href="https://www.instagram.com/jayherrans/" rel="noopener noreferrer" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@jorgeherrans" rel="noopener noreferrer" target="_blank">TikTok</a>
+            <a href="https://www.youtube.com/channel/UCvayv7u6HrpENlleXekJ2fg" rel="noopener noreferrer" target="_blank">YouTube</a>
+            <a href="https://twitter.com/JayHerrans" rel="noopener noreferrer" target="_blank">X (Twitter)</a>
+            <a href="https://www.jorgeriveraherrans.com/" rel="noopener noreferrer" target="_blank">Página oficial</a>
+        </section>
     </div>
+
     <div class="informacion">
         <h2>JORGE RIVERA-HERRANS</h2>
+
         <p>
-        Jorge Rivera-Herrans mantiene viva la tradición de la narrativa clásica en un entorno moderno, creando un universo inmersivo de música, teatro y artes escénicas que surgió en el ámbito digital. Durante su infancia en Puerto Rico, Jorge desarrolló su vínculo con la música a través de los videojuegos y la animación; de hecho, aprendió por su cuenta a tocar al piano los temas de *Kingdom Hearts II*. A pesar de su profunda relación con la música —tanto como consumidor como intérprete—, inicialmente planeaba dedicarse a la medicina. Cursó estudios de medicina en la Universidad de Notre Dame hasta que su pasión se volvió imposible de ignorar. Inspirado por los musicales y por *La Odisea* —el poema épico de Homero—, comenzó a escribir lo que más tarde se convertiría en su musical *EPIC* durante su último año de carrera. En un principio, utilizó el proyecto como su tesis de grado, lo que le permitió dedicarle tiempo en clase, e incluso solicitó becas para viajar a Ítaca y realizar una investigación sobre el terreno. Sin embargo, la pandemia le obligó a cancelar el viaje y a mudarse a un apartamento con sus padres. En 2021, publicó un fragmento de la canción «Full Speed ​​Ahead»; el tema se hizo viral de forma inesperada, lo que dio un impulso decisivo a su proceso creativo. 
+            Jorge Rivera-Herrans mantiene viva la tradición de la narrativa clásica en un entorno moderno, creando un universo inmersivo de música, teatro y artes escénicas que surgió
+            en el ámbito digital. Durante su infancia en Puerto Rico, Jorge desarrolló su vínculo con la música a través de los videojuegos y la animación; de hecho, aprendió por su
+            cuenta a tocar al piano los temas de *Kingdom Hearts II*. A pesar de su profunda relación con la música —tanto como consumidor como intérprete—, inicialmente planeaba
+            dedicarse a la medicina. Cursó estudios de medicina en la Universidad de Notre Dame hasta que su pasión se volvió imposible de ignorar. Inspirado por los musicales y por
+            *La Odisea* —el poema épico de Homero—, comenzó a escribir lo que más tarde se convertiría en su musical *EPIC* durante su último año de carrera. En un principio, utilizó
+            el proyecto como su tesis de grado, lo que le permitió dedicarle tiempo en clase, e incluso solicitó becas para viajar a Ítaca y realizar una investigación sobre el terreno.
+            Sin embargo, la pandemia le obligó a cancelar el viaje y a mudarse a un apartamento con sus padres. En 2021, publicó un fragmento de la canción «Full Speed ​​Ahead»; el tema se
+            hizo viral de forma inesperada, lo que dio un impulso decisivo a su proceso creativo.
         </p>
+
         <p>
-        Inspirándose en la estética del anime, aprovechando al máximo el potencial de las redes sociales y rindiendo un homenaje definitivo a *La Odisea* para las nuevas generaciones, Jorge fue dando forma a la narrativa de *EPIC* en tiempo real: compuso la música, interpretó el papel de Odiseo y lanzó una colección de nueve EP a lo largo de cinco años. En el camino, alcanzó el primer puesto en diversas listas, como la *Billboard Top Compilation Albums*, la *Billboard Cast Albums*, la lista general de álbumes de iTunes y la lista de bandas sonoras de iTunes. Tras acumular miles de millones de reproducciones, liderar las listas de éxitos y forjar una comunidad global de seguidores apasionados en torno a su musical *EPIC*, Jorge Rivera-Herrans sigue explorando la magia de las historias, con más música aún por llegar. Uno de sus proyectos que esta trabajando recientemente es un proyecto titulado "Ilium", que es una adaptación musical sobre la "Iliada" de Homero, donde la historia se concentra en un periodo de apenas 51 días durante el décimo y último año del asedio a la ciudad de Troya (también llamada Ilión, de ahí el nombre de la obra). Se espera que para esta adaptación musical se lleve a cabo por Sagas como paso con EPIC:the musical.
+            Inspirándose en la estética del anime, aprovechando al máximo el potencial de las redes sociales y rindiendo un homenaje definitivo a *La Odisea* para las nuevas
+            generaciones, Jorge fue dando forma a la narrativa de *EPIC* en tiempo real: compuso la música, interpretó el papel de Odiseo y lanzó una colección de nueve EP a lo
+            largo de cinco años. En el camino, alcanzó el primer puesto en diversas listas, como la *Billboard Top Compilation Albums*, la *Billboard Cast Albums*, la lista general
+            de álbumes de iTunes y la lista de bandas sonoras de iTunes. Tras acumular miles de millones de reproducciones, liderar las listas de éxitos y forjar una comunidad global
+            de seguidores apasionados en torno a su musical *EPIC*, Jorge Rivera-Herrans sigue explorando la magia de las historias, con más música aún por llegar. Uno de sus proyectos
+            que esta trabajando recientemente es un proyecto titulado "Ilium", que es una adaptación musical sobre la "Iliada" de Homero, donde la historia se concentra en un
+            periodo de apenas 51 días durante el décimo y último año del asedio a la ciudad de Troya (también llamada Ilión, de ahí el nombre de la obra). Se espera que para esta
+            adaptación musical se lleve a cabo por Sagas como paso con EPIC:the musical.
         </p>
     </div>
 </section>
+
 <div style="background-color: #313036; min-height: 120px; padding: 10px; color: white;"></div>
 
 <script>
@@ -1861,39 +4079,82 @@ const ID_PLAYLIST = "PLTs1gCDJMwHSjorLXqyaVF4b1OSLhGIuT";
 let reproductor;
 let indicePendiente = null;
 
+
+// Muestra u oculta las canciones de cada saga.
 function mostrarCanciones(id) {
     const listas = document.querySelectorAll(".canciones");
+    const sagas = document.querySelectorAll(".saga");
+    const seleccionada = document.getElementById(id)?.closest(".saga");
 
-    listas.forEach(function(lista) {
-        if (lista.id === id) {
-            lista.style.display =
-                lista.style.display === "flex" ? "none" : "flex";
-        } else {
-            lista.style.display = "none";
+    if (!seleccionada) return;
+
+    const estabaAbierta = seleccionada.classList.contains("activa");
+
+    sagas.forEach(saga => saga.classList.remove("activa"));
+    listas.forEach(lista => {
+        lista.style.display = "none";
+    });
+
+    if (!estabaAbierta) {
+        seleccionada.classList.add("activa");
+
+        const canciones = seleccionada.querySelector(".canciones");
+
+        if (canciones) {
+            canciones.style.display = "flex";
         }
+    }
+}
+
+
+// Lleva directamente a la saga seleccionada desde la línea temporal.
+function irASaga(id) {
+    const lista = document.getElementById(id);
+    const tarjeta = lista?.closest(".saga");
+
+    if (!tarjeta) return;
+
+    mostrarCanciones(id);
+
+    tarjeta.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
     });
 }
 
+
+// Inicializa el reproductor de YouTube.
 function onYouTubeIframeAPIReady() {
+    if (!document.getElementById("youtubePlayer") || !window.YT?.Player) return;
+
     reproductor = new YT.Player("youtubePlayer", {
         width: "100%",
         height: "400",
         videoId: "bWIgy-Ls-SU",
+
         playerVars: {
-            origin: window.location.origin
+            playsinline: 1,
+            rel: 0
         },
+
         events: {
             onReady: function() {
                 if (indicePendiente !== null) {
-                    reproducirCancion(indicePendiente);
+                    const pendiente = indicePendiente;
                     indicePendiente = null;
+
+                    reproducirCancion(pendiente);
                 }
             }
         }
     });
 }
 
+
+// Reproduce una canción según su posición en la lista.
 function reproducirCancion(indice) {
+    if (!Number.isInteger(indice) || indice < 0 || indice > 39) return;
+
     if (!reproductor || typeof reproductor.loadPlaylist !== "function") {
         indicePendiente = indice;
         return;
@@ -1905,58 +4166,23 @@ function reproducirCancion(indice) {
         index: indice
     });
 
-    document.querySelector(".reproductor").scrollIntoView({
-        behavior: "smooth"
+    document.querySelector(".reproductor")?.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
     });
 }
 
-function mostrarCanciones(id) {
 
-    const listas = document.querySelectorAll(".canciones");
-    const sagas = document.querySelectorAll(".saga");
-
-    let seleccionada = null;
-
-    sagas.forEach(function(saga) {
-        const lista = saga.querySelector(".canciones");
-
-        if (lista && lista.id === id) {
-            seleccionada = saga;
-        }
-    });
-
-    if (!seleccionada) return;
-
-    const estabaAbierta = seleccionada.classList.contains("activa");
-
-    sagas.forEach(function(saga) {
-        saga.classList.remove("activa");
-    });
-
-    listas.forEach(function(lista) {
-        lista.style.display = "none";
-    });
-
-    if (!estabaAbierta) {
-        seleccionada.classList.add("activa");
-
-        const canciones = seleccionada.querySelector(".canciones");
-        canciones.style.display = "flex";
-    }
-}
-
+// Muestra los detalles de apariencia, personalidad u origen.
 function mostrarDetalle(id) {
-
-    const paneles = document.querySelectorAll(".detalle-panel");
-
     const seleccionado = document.getElementById(id);
 
+    if (!seleccionado) return;
 
+    const paneles = document.querySelectorAll(".detalle-panel");
     const estabaAbierto = seleccionado.classList.contains("activo");
 
-    paneles.forEach(function(panel) {
-        panel.classList.remove("activo");
-    });
+    paneles.forEach(panel => panel.classList.remove("activo"));
 
     if (!estabaAbierto) {
         seleccionado.classList.add("activo");
@@ -1964,9 +4190,341 @@ function mostrarDetalle(id) {
 }
 </script>
 
+<!-- API de YouTube -->
 <script src="https://www.youtube.com/iframe_api"></script>
 
-<img src="https://i.pinimg.com/736x/91/ed/f9/91edf907566ee25b6ba1ba4447b2afc0.jpg" alt="Hermes chibi">
-<center><h1>GRACIAS POR LLEGAR HASTA AQUI, ESPEREMOS Q LE HAYA GUSTADO Y HERMES CHIBI LE ESTARA AGRADECIDO SI NOS DAS UN 100 EN SU MATERIA</h1></center>
+<script>
+
+function entrarPagina() {
+    document.getElementById("bienvenida")?.remove();
+}
+
+// Muestra u oculta información desplegable.
+function mostrarInfo(id) {
+    const contenido = document.getElementById(id);
+
+    if (!contenido) return;
+
+    const abierto = getComputedStyle(contenido).display !== "none";
+
+    contenido.style.display = abierto ? "none" : "block";
+}
+
+
+let indiceComparacion = 0;
+
+function mostrarComparacion(indice) {
+    const carrusel = document.querySelector(".comparacion-carrusel");
+    if (!carrusel) return;
+
+    const diapositivas = carrusel.querySelectorAll(".comparacion-slide");
+    const indicadores = carrusel.querySelectorAll(".indicador");
+    if (diapositivas.length === 0 || indicadores.length !== diapositivas.length) return;
+
+    indiceComparacion = (indice + diapositivas.length) % diapositivas.length;
+
+    diapositivas.forEach((diapositiva, posicion) => {
+        diapositiva.classList.toggle("activa", posicion === indiceComparacion);
+    });
+
+    indicadores.forEach((indicador, posicion) => {
+        indicador.classList.toggle("activo", posicion === indiceComparacion);
+    });
+
+    const numero = carrusel.querySelector("#numeroActual");
+    if (numero) numero.textContent = String(indiceComparacion + 1);
+}
+
+function cambiarComparacion(direccion) {
+    mostrarComparacion(indiceComparacion + direccion);
+}
+
+function irAComparacion(indice) {
+    mostrarComparacion(indice);
+}
+
+
+// Información de las etapas del viaje de Odiseo.
+const etapasOdiseo = {
+
+    troya: {
+        titulo: "1. Troya – The Troy Saga",
+        texto: "Después de diez años de guerra, Odiseo consigue la victoria utilizando la estrategia del caballo de Troya. Sin embargo, su viaje de regreso a Ítaca apenas comienza. Sus decisiones durante la guerra también tendrán consecuencias en su aventura."
+    },
+
+    lotofagos: {
+        titulo: "2. Los lotófagos – The Cyclops Saga",
+        texto: "Tras abandonar Troya, Odiseo y sus hombres llegan a la isla de los lotófagos. Allí conocen a sus habitantes, quienes les ofrecen frutos de loto. Odiseo intenta mantener a su tripulación concentrada en regresar a casa y continúa el viaje."
+    },
+
+    polifemo: {
+        titulo: "3. Polifemo – The Cyclops Saga",
+        texto: "Odiseo y algunos de sus hombres entran en la cueva del cíclope Polifemo para conseguir provisiones. El encuentro termina convirtiéndose en una lucha por sobrevivir. Odiseo utiliza su ingenio para escapar, pero revela su verdadera identidad y provoca la ira de Poseidón."
+    },
+
+    eolo: {
+        titulo: "4. Eolo – The Ocean Saga",
+        texto: "Odiseo llega a la isla flotante de Eolo, quien le entrega una bolsa que contiene los vientos para ayudarlo a llegar a Ítaca. Sin embargo, sus compañeros abren la bolsa por curiosidad y los vientos los alejan nuevamente de su destino."
+    },
+
+    lestrigones: {
+        titulo: "5. Los lestrigones",
+        texto: "Después de abandonar la isla de Eolo, Odiseo y su tripulación llegan a la tierra de los lestrigones. Sus habitantes atacan las naves y solo el barco de Odiseo logra escapar."
+    },
+
+    circe: {
+        titulo: "6. Circe – The Circe Saga",
+        texto: "La tripulación llega a la isla de la hechicera Circe. Ella transforma a los hombres de Odiseo en animales, por lo que el héroe debe enfrentarse a ella para conseguir que los libere. Finalmente, Circe les permite continuar su viaje."
+    },
+
+    inframundo: {
+        titulo: "7. El inframundo – The Underworld Saga",
+        texto: "Odiseo desciende al inframundo para buscar al adivino Tiresias. Allí descubre nuevas advertencias sobre su futuro y comprende que el camino de regreso estará lleno de pérdidas y decisiones difíciles."
+    },
+
+    sirenas: {
+        titulo: "8. Las sirenas – The Thunder Saga",
+        texto: "Durante la travesía, Odiseo y su tripulación se encuentran con las sirenas, criaturas que utilizan sus voces para atraer a los navegantes. Odiseo toma medidas para evitar que sus hombres caigan en su engaño y puedan continuar."
+    },
+
+    escila: {
+        titulo: "9. Escila – The Thunder Saga",
+        texto: "Para atravesar una ruta peligrosa, Odiseo debe enfrentarse a Escila, un monstruo marino de varias cabezas. La decisión que toma para salvar al resto de la tripulación demuestra hasta dónde está dispuesto a llegar para sobrevivir."
+    },
+
+    helios: {
+        titulo: "10. La isla del Sol – The Thunder Saga",
+        texto: "La tripulación llega a la isla donde se encuentran los animales sagrados del dios Helios. A pesar de las advertencias, los hombres toman una decisión que provoca la intervención de Zeus y trae consecuencias devastadoras para el viaje."
+    },
+
+    calipso: {
+        titulo: "11. Calipso – The Wisdom Saga",
+        texto: "Después de los acontecimientos anteriores, Odiseo termina en la isla de Ogigia, donde vive Calipso. Ella desea que permanezca a su lado, pero Odiseo continúa pensando en Ítaca y en su familia."
+    },
+
+    godgames: {
+        titulo: "God Games – Evento en el Olimpo",
+        texto: "Atenea se enfrenta a Zeus y trata de convencerlo para que libere a Odiseo. Para lograrlo, debe superar las pruebas y argumentos de varios dioses del Olimpo. Finalmente, consigue que Zeus permita que Odiseo continúe su camino hacia Ítaca."
+    },
+
+    caribdis: {
+        titulo: "12. Caribdis – The Vengeance Saga",
+        texto: "Odiseo debe atravesar una zona marítima peligrosa y enfrentarse a Caribdis. Este desafío forma parte de su lucha por superar los obstáculos que todavía lo separan de su hogar."
+    },
+
+    poseidon: {
+        titulo: "13. La venganza de Poseidón – The Vengeance Saga",
+        texto: "Odiseo vuelve a enfrentarse a Poseidón, quien busca vengarse por lo ocurrido con su hijo Polifemo. Durante este enfrentamiento, Odiseo debe decidir hasta dónde está dispuesto a llegar para superar al dios del mar y conseguir regresar a su hogar."
+    },
+
+    itaca: {
+        titulo: "14. Ítaca – The Ithaca Saga",
+        texto: "Finalmente, Odiseo regresa a Ítaca después de tantos años de dificultades. Allí descubre que su hogar está ocupado por pretendientes que buscan casarse con Penélope. El héroe debe recuperar su lugar y reencontrarse con su familia."
+    }
+};
+
+const etapasMapa = [
+    "troya",
+    "lotofagos",
+    "polifemo",
+    "eolo",
+    "lestrigones",
+    "circe",
+    "inframundo",
+    "sirenas",
+    "escila",
+    "helios",
+    "calipso",
+    "caribdis",
+    "poseidon",
+    "itaca"
+];
+
+function mostrarLugar(indice) {
+    const etapa = etapasMapa[indice];
+    if (etapa) mostrarEtapa(etapa);
+}
+
+// Cambia el texto del recorrido según la etapa seleccionada.
+function mostrarEtapa(id) {
+    const etapa = etapasOdiseo[id];
+
+    if (!etapa) return;
+
+    const titulo = document.getElementById("titulo-etapa");
+    const texto = document.getElementById("texto-etapa");
+
+    if (titulo) titulo.textContent = etapa.titulo;
+    if (texto) texto.textContent = etapa.texto;
+
+    document.querySelectorAll(".punto-mapa[data-etapa]").forEach(punto => {
+        punto.classList.toggle("activo", punto.dataset.etapa === id);
+    });
+
+    document.querySelectorAll(".botones-recorrido button[data-etapa]").forEach(boton => {
+        boton.classList.toggle("activo", boton.dataset.etapa === id);
+    });
+
+    document.getElementById("panel-recorrido")?.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+    });
+}
+
+const preguntasTrivia = [
+    {
+        pregunta: "¿Quién es el protagonista de EPIC: The Musical?",
+        opciones: ["Aquiles", "Odiseo", "Hércules", "Perseo"],
+        correcta: 1
+    },
+    {
+        pregunta: "¿Quién es la esposa de Odiseo?",
+        opciones: ["Circe", "Calipso", "Penélope", "Atenea"],
+        correcta: 2
+    },
+    {
+        pregunta: "¿Quién es el dios del mar?",
+        opciones: ["Zeus", "Hermes", "Apolo", "Poseidón"],
+        correcta: 3
+    },
+    {
+        pregunta: "¿Cómo se llama el hijo de Odiseo?",
+        opciones: ["Telémaco", "Polites", "Euríloco", "Tiresias"],
+        correcta: 0
+    },
+    {
+        pregunta: "¿Cuál es el hogar al que Odiseo intenta regresar?",
+        opciones: ["Esparta", "Troya", "Ítaca", "Atenas"],
+        correcta: 2
+    }
+];
+
+let preguntaActual = 0;
+let puntosTrivia = 0;
+let respondidaTrivia = false;
+
+function cargarPregunta() {
+    const pregunta = preguntasTrivia[preguntaActual];
+    const opciones = document.getElementById("opciones-trivia");
+
+    document.getElementById("pregunta-trivia").textContent = pregunta.pregunta;
+    document.getElementById("resultado-trivia").textContent = "";
+    document.getElementById("siguiente-trivia").disabled = true;
+    respondidaTrivia = false;
+    opciones.innerHTML = "";
+
+    pregunta.opciones.forEach((opcion, indice) => {
+        const boton = document.createElement("button");
+        boton.type = "button";
+        boton.textContent = opcion;
+        boton.className = "opcion-trivia";
+        boton.onclick = () => comprobarRespuesta(indice);
+        opciones.appendChild(boton);
+    });
+
+    document.getElementById("puntuacion-trivia").textContent =
+        `Puntuación: ${puntosTrivia} / ${preguntasTrivia.length}`;
+}
+
+function comprobarRespuesta(indice) {
+    if (respondidaTrivia) return;
+
+    respondidaTrivia = true;
+    const pregunta = preguntasTrivia[preguntaActual];
+    const botones = document.querySelectorAll(".opcion-trivia");
+
+    botones.forEach((boton, posicion) => {
+        boton.disabled = true;
+        if (posicion === pregunta.correcta) boton.classList.add("correcta");
+        else if (posicion === indice) boton.classList.add("incorrecta");
+    });
+
+    if (indice === pregunta.correcta) {
+        puntosTrivia++;
+        document.getElementById("resultado-trivia").textContent =
+            "¡Correcto! Has demostrado tus conocimientos.";
+    } else {
+        document.getElementById("resultado-trivia").textContent =
+            `No es correcto. La respuesta era: ${pregunta.opciones[pregunta.correcta]}`;
+    }
+
+    document.getElementById("puntuacion-trivia").textContent =
+        `Puntuación: ${puntosTrivia} / ${preguntasTrivia.length}`;
+    document.getElementById("siguiente-trivia").disabled = false;
+}
+
+function siguientePregunta() {
+    preguntaActual++;
+
+    if (preguntaActual < preguntasTrivia.length) {
+        cargarPregunta();
+        return;
+    }
+
+    document.getElementById("pregunta-trivia").textContent = "¡Trivia completada!";
+    document.getElementById("opciones-trivia").innerHTML = "";
+    document.getElementById("resultado-trivia").textContent =
+        `Obtuviste ${puntosTrivia} de ${preguntasTrivia.length} puntos.`;
+    document.getElementById("puntuacion-trivia").textContent = "";
+
+    const botonSiguiente = document.getElementById("siguiente-trivia");
+    botonSiguiente.textContent = "Volver a jugar";
+    botonSiguiente.onclick = reiniciarTrivia;
+}
+
+function reiniciarTrivia() {
+    preguntaActual = 0;
+    puntosTrivia = 0;
+
+    const botonSiguiente = document.getElementById("siguiente-trivia");
+    botonSiguiente.textContent = "Siguiente pregunta";
+    botonSiguiente.onclick = siguientePregunta;
+
+    cargarPregunta();
+}
+
+cargarPregunta();
+
+</script>
+
+<img
+    alt="Hermes chibi"
+    decoding="async"
+    loading="lazy"
+    src="https://i.pinimg.com/736x/91/ed/f9/91edf907566ee25b6ba1ba4447b2afc0.jpg"
+/>
+
+<center>
+    <h1>
+        GRACIAS POR LLEGAR HASTA AQUI, ESPEREMOS Q LE HAYA GUSTADO Y HERMES CHIBI LE ESTARA AGRADECIDO SI NOS DAS UN 100 EN SU MATERIA
+    </h1>
+</center>
+
+<button id="volver-arriba" type="button" onclick="volverArriba()" title="Volver al inicio" aria-label="Volver al inicio">
+    ↑
+</button>
+
+<script>
+window.addEventListener("scroll", function() {
+    const boton = document.getElementById("volver-arriba");
+
+    if (window.scrollY > 300) {
+        boton.style.display = "block";
+    } else {
+        boton.style.display = "none";
+    }
+});
+
+function volverArriba() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</div>
 </body>
 </html>
